@@ -1,0 +1,31 @@
+// 改变导航字体颜色
+(function(){
+    var navA = document.getElementById("nav").getElementsByTagName("ul")[0].getElementsByTagName("a");
+    navA[1].style.color = "#fff";
+    if(navA[0].addEventListener){
+        for(var i = 0; i < navA.length; i++){
+            navA[i].addEventListener("mouseover",change(i), false);
+            navA[i].addEventListener("mouseout",changeout(i), false);
+        }
+    }
+    function change(i){
+        return function(){
+            navA[i].style.color = "#fff";
+            for(var m = 0;m < 4;m++){
+                if(m != i){
+                    navA[m].style.color = "#4b9eff";
+                }
+            }
+        };
+    }
+    function changeout(i){
+        return function(){
+            navA[1].style.color = "#fff";
+            for(var m = 0;m < 4;m++){
+                if(m != 1){
+                    navA[m].style.color = "#4b9eff";
+                }
+            }
+        }
+    }
+})();

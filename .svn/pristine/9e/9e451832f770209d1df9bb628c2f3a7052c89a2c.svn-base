@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+    <!--[if IE 8]><body class="ie"><![endif]-->
+    <!--[if IE 7]><body class="ie"><![endif]-->
+    <div id="shadow_all"></div>
+    <{include file="public/register.inc.html"}>
+    <{include file="public/login.inc.html"}>
+    <{include file="public/header.html"}>
+    
+    <div id="photobox">
+        <div id="photo">
+            <div id="turnleft" class="turnppt"></div>
+            <div id="photos">
+                <img src="<{$res}>/images/img1.jpg" id="placeholder"/>
+            </div>
+            <div id="turnright" class="turnppt"></div>
+        </div>
+        <div id="smallphotos">
+        <div id="smallleft" class="smallppt"></div>
+        <div id="ppt">
+            <a id="cancle4" class="cancleAll"></a>
+                <div id="ppt_image">
+                    <ul id="image">
+                        <li>
+                            <img src="<{$res}>/images/img1.jpg" class="ppt_smallphotos" title="A fireworks display" id="photo_on"/>
+                        </li>
+                        <li>
+                            <img src="<{$res}>/images/img2.jpg" class="ppt_smallphotos"  title="A cup of black coffee"/>
+                        </li>
+                        <li>
+                            <img src="<{$res}>/images/img3.jpg" class="ppt_smallphotos"  title="A red, red rose"/>
+                        </li>
+                        <li>
+                            <img src="<{$res}>/images/img4.jpg" class="ppt_smallphotos"  title="The famous clock"/>
+                        </li>
+                        <li>
+                            <img src="<{$res}>/images/img5.jpg" class="ppt_smallphotos"/>
+                        </li>
+                        <li>
+                            <img src="<{$res}>/images/img1.jpg" class="ppt_smallphotos"/>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div id="smallright" class="smallppt"></div>
+        </div>
+        <p id="description">请选择图片</p>
+    </div>
+
+    <div id="small_window">
+        <a id="cancle3" class="cancleAll"></a>
+        <form>
+            <textarea id="iwish_text" name="text"></textarea>
+            <p id="checkin">
+                <input type="checkbox" name="check" id="check">
+                <a id="checkimg" style=""></a>匿名
+                <span id="wordsize">( 0/140 )</span>
+            </p>
+            <p id="mail">Ta的邮箱（选填）</p><input type="text" name="mailbox">
+            <span>（我们会为你发送一封邮件给Ta）</span>
+
+            <p id="ma">验证码 : <input style="text" name="checkma"><img src="<{$res}>/images/checkma.png" alt="code"></p>
+            <input id="window_button" value="提交" type="submit" />
+        </form>
+    </div>
+
+<!--内容背景-->
+<div id="top_background">
+    <img id="top_sky" src="<{$res}>/images/blue sky.png">
+    <img id="left_balloon"src="<{$res}>/images/left_balloon.png" alt="love">
+    <img id="right_balloon" src="<{$res}>/images/right_balloon.png" alt="love">
+    <div class="clear"></div>
+    <div id="love_expression">
+        <a id="small_show">我要表白</a>
+        <a href="#" id="my_expression">我的表白</a>    </div>
+    <div id="two_demensional_code">
+        <img id="code_img" src="<{$res}>/images/2 demensional code.png" alt="扫一扫">“发送‘表白 ’ 到微信，随时随地表白爱”
+    </div>
+    <div class="clear"></div>
+    <img id="top" src="<{$res}>/images/top.png">
+</div>
+<!--内容背景结束-->
+<!--瀑布流开始-->
+<div class="wrapper" id="wrapper">
+    <div class="content">
+        <div class="info" id="this_photo">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子我最爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子....你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <embed class="video" src="">这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <embed class="video" src="">这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <embed class="video" src="">这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频这是视频        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <img src="<{$res}>/images/pic1.png" alt="pic">你是我最爱的兔子你是我最你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子你是我最爱的兔子爱的兔子你是我最爱的兔子....
+        </div>
+    </div>
+                <span><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a></span><!--每页20个-->
+</div>
+
+<script type="text/javascript" src="<{$res}>/js/common.js"></script>
+<script type="text/javascript" src="<{$res}>/js/<{$script}>.js"></script>
+</body>
+</html>

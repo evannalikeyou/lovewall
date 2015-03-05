@@ -1,0 +1,125 @@
+#nav ul li:first-child>a{
+	color: #fff;
+}
+#main{
+	background: url(../images/index_background.png) no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 0 auto;
+	z-index: 900;
+}
+.ie #main{
+	width: 1175px !important;
+	height: 472px !important;
+}
+#block{
+	left: 0;
+	width: 76px;
+}
+#boy{
+	background: url(../images/boy.png) no-repeat;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.ie #boy{
+	left: 770px !important;
+	top: 80px !important;
+}
+#boy a{
+	position: absolute;
+	display: block;
+}
+#heart1{
+	background: url(../images/heart1.png) no-repeat;
+	background-repeat: no-repeat;
+}
+#heart2{
+	background: url(../images/heart2.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	background-repeat: no-repeat;
+}
+#heart3{
+	background: url(../images/heart3.png) no-repeat;
+	background-repeat: no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#tree{
+	position: absolute;
+}
+.ie #tree{
+	left: 170px !important;
+	top: 120px !important;
+}
+#tree a{
+	display: block;
+	position: absolute;
+}
+#tree1{
+	background: url(../images/tree.png) no-repeat;
+	background-repeat: no-repeat;
+}
+#tree2{
+	background: url(../images/tree2.png) no-repeat;
+	background-repeat: no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#leaves{
+	position: absolute;
+}
+.all{
+	position: absolute;
+}
+#leaves1{
+	background: url(../images/leaves1.png);
+}
+#leaves2{
+	background: url(../images/leaves2.png);
+}
+#leaves3{
+	background: url(../images/leaves3.png);
+}
+#leaves4{
+	background: url(../images/leaves4.png);
+}
+#flower{
+	position: absolute;
+}
+.ie #flower{
+	left: 300px !important ;
+	top: 320px !important ;
+}
+#flower a{
+	position: absolute;
+	display: block;
+}
+#flower1{
+	background-repeat: no-repeat;
+	background: url(../images/flower.png) no-repeat;
+}
+#flower2{
+	background-repeat: no-repeat;
+	background: url(../images/flower_light1.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#flower3{
+	background-repeat: no-repeat;
+	background: url(../images/flower_light2.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#flower4{
+	background-repeat: no-repeat;
+	background: url(../images/flower_light3.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#flower5{
+	background-repeat: no-repeat;
+	background: url(../images/flower_hover.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}

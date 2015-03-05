@@ -1,0 +1,80 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="<{$res}>/css/main.css">
+</head>
+<body>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" height="99%">
+    	<tr class="tr1">
+        	<td class="td1"><img src="<{$res}>/images/main_hl.gif" /></td>
+            <td>
+            	<span class="sp1"><img src="<{$res}>/images/main_hl2.gif" /></span>
+                <span class="sp2"><{$title}></span>
+                <span class="sp3"><img src="<{$res}>/images/main_hr.gif" /></span>
+            </td>
+            <td><span class="sp4"></span></td>
+        </tr>
+    	<tr>
+			<td class="td2"></td>
+			<td class="td_content_show" valign="top" align="middle">
+				<div id="add_user">
+                	<h2>添加用户</h2>
+                    <form method="post" action="<{$url}>/insert">
+                 	<table border="1">
+                    <tbody>
+                      <tr>
+                        <td>用户名：</td>
+                        <td><input type="text" name="username" /></td>
+                      </tr>
+                      <tr>
+                        <td>密码：</td>
+                        <td><input type="text" name="password" /></td>
+                      </tr>
+                      <tr>
+                        <td>邮箱：</td>
+                        <td><input type="text" name="email" /></td>
+                      </tr>
+                      <tr>
+                        <td>性别：</td>
+                        <td>
+                        	<select name="gender">
+                        		<option value="0">不明</option>
+                                <option value="1">女</option>
+                                <option value="2">男</option>
+                            </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>身份：</td>
+                        <td>
+                        	<select name="level">
+                        	<{if $smarty.session.user_info.level==2}>	
+                                <option value="0">普通用户</option>
+                                <option value="1">管理员</option>
+                                <option value="2">站长</option>
+                            <{else}>
+                            	<option value="0">普通用户</option>
+                            <{/if}>
+                            </select>
+                        </td>
+                      </tr>
+                      </tbody>
+                      <tfoot>
+                      	<tr>
+                        	<td colspan="2"><input type="submit" name="sub" class="button" value="提交" /><input style="margin-left:10px; width:70px; height:19px;" type="reset" value="重置" /></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    </form>
+                </div>
+			</td>
+			<td class="td3"></td>
+        </tr>
+		<tr class="tr2">
+			<td class="td4"></td>
+			<td class="td5"></td>
+			<td class="td6"></td>
+		</tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,302 @@
+*{
+	margin:0;
+	padding:0;
+	}
+body{
+	background: url(../images/bg.gif) repeat-x;
+	}
+a{
+	text-decoration:none;
+	}
+a:hover{
+	text-decoration:underline;
+	}
+a:link {
+	color: #336699;
+	}
+a:visited{
+	color: #336699;
+	}
+a:hover {
+	color: #336699;
+	}
+a:active{
+	color:#336699;
+	}
+ul{
+	list-style-type:none;
+	}
+table tr.tr1{
+	background:url(../images/bg_header.gif) repeat-x;
+	height:47px;
+	}
+table tr td.td1{
+	width:15px;
+	height:47px;
+	}
+table tr td span.sp1{
+	float:left;
+	width:15px;
+	height:47px;
+	}
+table tr td span.sp2{
+	float:left;
+	color:#FFF;
+	font-size:12px;
+	height:27px;
+	padding:10px;
+	background:url(../images/main_hb.gif) repeat-x;
+	text-align:center;
+	}
+table tr td span.sp3{
+	float:left;
+	width:60px;
+	height:47px;
+	}
+table tr td span.sp4{
+	height:10px;
+	background:url(../images/main_rc.gif) no-repeat 50% bottom;
+	}
+table tr td.td2{	
+	background: url(../images/main_ls.gif);
+	}
+table tr td.td3{	
+	background: url(../images/main_rs.gif);
+	}
+table tr.tr2{
+	background: url(../images/main_fs.gif) repeat-x;
+	height:10px;
+	}
+table tr td.td4{	
+	background: url(../images/main_lf.gif);
+	}
+table tr td.td5{	
+	background: url(../images/main_fs.gif);
+	}
+table tr td.td6{	
+	background: url(../images/main_rf.gif);
+	}
+table tr td.td_content_show{
+	padding: 10px; 
+	color: #566984;
+	background:#FFF;
+	}
+#td_show_body{
+	padding:5px 0 0 5px;
+	width:100%;
+	height:100%;
+	border:1px #CDCDCD solid;
+	max-height:100%;
+	overflow:auto;
+	}
+#member_main{
+	width:900px;
+	margin:0 auto;
+	padding:0 0 5px 0;
+	border:1px #666666 solid;
+	}
+#member_main h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	text-align:left;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	}
+#member_main dl dd{
+	font-size:14px;
+	padding:3px 30px;
+	text-align:left;
+	list-style-type:none;
+	border-bottom:1px dashed #666666;
+	}
+#set{
+	width:900px;
+	margin:0 auto;
+	border:1px solid #666666;
+	}
+#set h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	text-align:left;
+	text-indent:10px;
+	}
+#set table{
+	color:#666;
+	font-size:12px;
+	width:100%;
+	}
+#set table tr td{
+	padding:3px 0;
+	border:1px #cccccc solid;
+	text-align:center;
+	}
+#set table tr td input{
+	margin:0 30px;
+	}
+#set table tfoot input{
+	width:70px;
+	height:20px;
+	line-height:20px;
+	margin-left:10px;
+	}
+#set table tfoot tr td{
+	border:none;
+	}
+#user{
+	width:900px;
+	margin:0 auto;
+	border:1px #666666 solid;
+	}
+#user h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	text-align:left;
+	text-indent:10px;
+	}
+#user table{
+	color:#666;
+	font-size:12px;
+	width:100%;
+	}
+#user table tr td{
+	padding:3px 0;
+	border:1px #cccccc solid;
+	text-align:center;
+	}
+#add_user{
+	width:900px;
+	border:1px solid #666666;
+	margin:0 auto;
+	}
+#add_user h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	text-align:left;
+	text-indent:10px;
+	}
+#add_user table{
+	width:100%;
+	}
+#add_user table tr td{
+	padding:3px 0;
+	color:#666;
+	font-size:13px;
+	text-align:right;
+	border:1px solid #cccccc;
+	}
+#add_user table tr td input,#add_user table tr td select{
+	float:left;
+	width:200px;
+	margin-left:20px;
+	}
+#add_user table tr td select{
+	width:auto;
+	}
+#add_user table tr td input.button{
+	width:60px;
+	height:20px;
+	margin-left:200px;
+	}
+#profess{
+	width:900px;
+	margin:0 auto;
+	border:1px solid #666666;
+	}
+#profess h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	text-align:left;
+	text-indent:10px;
+	}
+#profess table{
+	color:#666;
+	font-size:12px;
+	width:100%;
+	}
+#profess table tr td{
+	padding:3px 0;
+	border:1px #cccccc solid;
+	text-align:center;
+	}
+tfoot tr td{
+	padding:5px 0;
+	}
+	
+	
+#audit{
+	width:900px;
+	margin:0 auto;
+	border:1px solid #666666;
+	}
+#audit h2{
+	font-size:16px;
+	height:25px;
+	color:#FFF;
+	line-height:25px;
+	background:#13406B;
+	border:1px solid #FFF;
+	text-align:left;
+	text-indent:10px;
+	}
+#audit table{
+	color:#666;
+	font-size:12px;
+	width:100%;
+	}
+#audit table tr td{
+	padding:3px 0;
+	text-align:left;
+	border:1px #cccccc solid;
+	text-indent:10px;
+	}
+#audit table tr td.left{
+	width:130px;
+	text-indent:70px;	
+	}
+#reason{
+	width:500px;
+	height:0px;
+	margin-left:-130px;
+	border:1px solid #cccccc;
+	padding:2px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	overflow:hidden;
+	display:none;
+	}
+#reason textarea{
+	width:100%;
+	height:100%;
+	max-height:100%;
+	max-width:100%;
+	}
+#audit p{
+	text-align:left;
+	margin:10px 0;
+	width:100%;
+	padding-top:2px;
+	text-indent:250px;
+	line-height:30px;
+	}
+#audit p input{
+	width:70px;
+	height:20px;
+	}

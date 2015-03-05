@@ -1,0 +1,102 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="<{$res}>/css/main.css">
+</head>
+<body>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" height="99%">
+    	<tr class="tr1">
+        	<td class="td1"><img src="<{$res}>/images/main_hl.gif" /></td>
+            <td>
+            	<span class="sp1"><img src="<{$res}>/images/main_hl2.gif" /></span>
+                <span class="sp2"><{$title}></span>
+                <span class="sp3"><img src="<{$res}>/images/main_hr.gif" /></span>
+            </td>
+            <td><span class="sp4"></span></td>
+        </tr>
+    	<tr>
+			<td class="td2"></td>
+			<td class="td_content_show" valign="top" align="middle">
+  				<div id="set">
+                	<h2>网站配置</h2>
+                    <{if $smarty.session.user_info.level==2}>
+                    <form method="post" action="<{$url}>/mod">
+                    <table>
+                    <tbody>
+                    	<tr>
+                    		<td>网站名称</td>
+                        	<td class="center"><input type="text" name="TITLE" value="<{$data.TITLE}>"/></td>
+                    		<td class="center">网站关键字</td>
+                        	<td><input type="text" name="KEYWORDS" size=50 value="<{$data.KEYWORDS}>" /></td>
+                        </tr>
+                        <tr>
+                    		<td>网站描述</td>
+                        	<td class="center"><textarea name="DESC" cols=45 rows=5><{$data.DESC}></textarea></td>
+                    		<td class="center">微信投稿分配的id号前缀</td>
+                        	<td><input type="text" name="WXTGPREFIX" value="<{$data.WXTGPREFIX}>" /></td>
+                        </tr>
+                        <tr>
+                    		<td>缓存设置</td>
+                        	<td class="center">
+                                <{if $data.CSTART==1}>
+                                    <input type="radio" name="CSTART" value="1" checked />开启
+                                    <input type="radio" name="CSTART" value="0" />关闭
+                                <{else}>
+                                    <input type="radio" name="CSTART" value="1" />开启
+                                    <input type="radio" name="CSTART" value="0" checked />关闭
+                                <{/if}>
+                            </td>
+                    		<td class="center">缓存时间</td>
+                        	<td><input type="text" name="CTIME" value="<{$data.CTIME}>" /></td>
+                        </tr>
+                        <tr>
+                    		<td>数据库驱动</td>
+                        	<td class="center">
+                                <{if $data.DRIVER eq "pdo" }>
+                                    <input type="radio" name="DRIVER" value="pdo" checked />pdo
+                                    <input type="radio" name="DRIVER" value="mysqli" />mysqli
+                                <{else}>
+                                    <input type="radio" name="DRIVER" value="pdo" />pdo
+                                    <input type="radio" name="DRIVER" value="mysqli" checked />mysqli
+                                <{/if}>
+                            </td>
+                    		<td class="center">是否开启调试模式</td>
+                        	<td>
+                                <{if $data.DEBUG==1}>
+                                    <input type="radio" name="DEBUG" value="1" checked />开启
+                                    <input type="radio" name="DEBUG" value="0" />关闭
+                                <{else}>
+                                    <input type="radio" name="DEBUG" value="1" />开启
+                                    <input type="radio" name="DEBUG" value="0" checked />关闭
+                                <{/if}>
+                            </td>
+                        </tr>
+                        <tr>
+                    		<td>用户每天许愿限制</td>
+                        	<td class="center"><input type="text" name="WXXYXZNUM" size=50 value="<{$data.WXXYXZNUM}>" /></td>
+                    		<td class="center">用户每天表白限制</td>
+                        	<td><input type="text" name="WXTGXZNUM" size=50 value="<{$data.WXTGXZNUM}>" /></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    	<tr>
+                        	<td colspan="4" style="text-align:center;"><input type="submit" value="修改" /><input type="reset" value="重置" /></td>
+                        </tr>
+                    </tfoot>
+                    </table>
+                    </form>
+                   <{else}>
+                   		<p style="padding:5px 0; font-size:13px;">此功能只有网站站长能使用</p>
+                   <{/if}>
+                </div>
+			</td>
+			<td class="td3"></td>
+        </tr>
+		<tr class="tr2">
+			<td class="td4"></td>
+			<td class="td5"></td>
+			<td class="td6"></td>
+		</tr>
+    </table>
+</body>
+</html>

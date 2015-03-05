@@ -1,0 +1,440 @@
+
+function getElementsByClassName(node,className){
+    if(node.getElementsByClassName){
+        return node.getElementsByClassName(className);
+    }else{
+        var results = new Array();
+        var elems = node.getElementsByTagName("*");
+        for (var i = 0; i < elems.length; i++) {
+            if(elems[i].className.indexOf(className) != -1){
+                results[results.length] = elems[i];
+            }
+        };
+        return results;
+    }
+}
+// 改变导航字体颜色
+(function(){
+	var navA = document.getElementById("nav").getElementsByTagName("ul")[0].getElementsByTagName("a");
+	navA[2].style.color = "#fff";
+	if(navA[0].addEventListener){
+		for(var i = 0; i < navA.length; i++){
+			navA[i].addEventListener("mouseover",change(i), false);
+			navA[i].addEventListener("mouseout",changeout(i), false);
+		}
+	}
+	function change(i){
+		return function(){
+			navA[i].style.color = "#fff";
+			for(var m = 0;m < 4;m++){
+				if(m != i){
+					navA[m].style.color = "#4b9eff";
+				}
+			}
+		};
+	}
+	function changeout(i){
+		return function(){
+			navA[2].style.color = "#fff";
+			for(var m = 0;m < 4;m++){
+				if(m != 2){
+					navA[m].style.color = "#4b9eff";
+				}
+			}
+		}
+	}
+})();
+// 根据屏幕调节背景图大小
+
+function Event(eventname,callfunction,justfity){
+    if(document.addEventListener){
+        this.addEventListener(eventname,callfunction,justfity)
+    }else{
+        this.attachEvent("on"+eventname,callfunction)
+    }
+};
+function GetId(id){
+    return document.getElementById(id);
+};
+
+(function(){
+	var bodyWidth,bodyHeight;
+	var buttle = $(".buttle");
+	function autoSize(){
+		var multiple = 668/1400;
+		function getsize(){
+			bodyWidth = document.body.clientWidth - 150;
+			bodyHeight = bodyWidth * multiple;
+		};
+		getsize();
+		function setsize(){
+			var main = document.getElementById("main");
+			main.style.width = bodyWidth + "px";
+			main.style.height = bodyHeight + "px";
+			main.style.backgroundSize = bodyWidth + "px" + " " +  bodyHeight + "px";
+		}
+		setsize();
+	};
+	autoSize();
+	$("#header").pin();
+
+	var a = 1400,b = 668;
+	function autoPicture(name,mulW,mul2,mulL,mulT){
+		var something = document.getElementById(name);
+		var width = bodyWidth * mulW;
+		var height = width * mul2;
+		something.style.width = width + "px";
+		something.style.height = height + "px";
+		something.style.backgroundSize = width + "px",height + "px";
+		something.style.left = bodyWidth * mulL + "px";
+		something.style.top = bodyHeight * mulT + "px";
+	}; 
+	//瓶子们
+	function tree(){
+		var treeHeight,treeWidth;
+		var multiple1 = 9/14;
+		var multiple2 = 38/90;
+		treeWidth = bodyWidth * multiple1;
+		treeHeight = treeWidth * multiple2;
+		var setTree = document.getElementById("tree");
+		setTree.style.width = treeWidth + "px";
+		setTree.style.height = treeHeight + "px";
+	};
+	tree();
+
+	function changeTreeLight(){
+		var buttle_no = $(".buttle_no");
+		var buttle_light = $(".buttle_light");
+		for (var i = 0; i < 9; i++) {
+			var $ai = $(buttle_light[i]);
+			$ai.css('opacity', 0);
+		};
+		function treeLight(){
+
+			for (var i = 0; i < 9; i++) {
+				if (buttle[i].addEventListener) {
+					buttle[i].addEventListener("mouseover",changeButtle(i), false);
+				}else{
+					buttle[i].attachEvent("onmouseover", changeButtle(i));
+				}
+			};
+			for (var i = 0; i < 9; i++) {
+				if (buttle[i].addEventListener) {
+					buttle[i].addEventListener("mouseout",changeoutButtle(i), false);
+				}else{
+					buttle[i].attachEvent("onmouseout", changeoutButtle(i));
+				}
+			};
+			var set;
+			function changeButtle(i){
+				return function(){
+					var $noi = $(buttle_no[i]);
+					var $lighti = $(buttle_light[i]);
+					$noi.stop().animate({opacity: '0'},800);  
+					$lighti.stop().animate({opacity: '1'},800);
+				}
+				set = setTimeout(function(){
+					treeLight();
+				}, 1000);
+			};
+			function changeoutButtle(i){
+				return function(){
+					var $noi = $(buttle_no[i]);
+					var $lighti = $(buttle_light[i]);
+					$noi.stop().animate({opacity: '1'},800);  
+					$lighti.stop().animate({opacity: '0'},800);
+				}
+				clearTimeout(set);
+			};
+		}
+		treeLight();
+	};
+	changeTreeLight();
+	function treePosition(){
+		var a = 15,b = 1400, c = 668;
+		var treeLeftPro = [(383-74)/b,(561-74)/b,(770-74)/b,(950-74)/b,(621-74)/b,(725-74)/b,(539-74)/b,(898-74)/b,(391-74)/b];
+		var treeTopPro = [(121-a)/c,(50-a)/c,(95-a)/c,(99-a)/c,(173-a)/c,(197-a)/c,(234-a)/c,(247-a)/c,(283-a)/c];
+		var treeLeft = [],treeTop = [];		
+		for (var i = 0; i < 9; i++) {
+			treeLeft[i] = bodyWidth * treeLeftPro[i];
+			treeTop[i] = bodyHeight * treeTopPro[i];
+		};
+		for (var i = 0; i < 9; i++) {
+			buttle[i].style.left = treeLeft[i] + "px";
+			buttle[i].style.top = treeTop[i] + "px";
+		};
+	};
+	treePosition();
+	
+	function wishPosition(){
+		mulW = 156/a;
+		mul2 = 183/197;
+		mulL = 750/a;
+		mulT = 440/b;
+		autoPicture("iwish",mulW,mul2,mulL,mulT);
+	};
+	function myWish(){
+		mulW = 156/a;
+		mul2 = 78/156;
+		mulL = 902/a;
+		mulT = 540/b;
+		autoPicture("mywish",mulW,mul2,mulL,mulT);
+	};
+	function myWish1(){
+		mulW = 156/a;
+		mul2 = 78/156;
+		mulL = 0;
+		mulT = 0;
+		autoPicture("mywish1",mulW,mul2,mulL,mulT);
+		autoPicture("mywish2",mulW,mul2,mulL,mulT);
+	};
+	wishPosition();myWish();myWish1();
+	function wish(){
+		var set;
+		Event.call(GetId("iwish"),"mouseover",changeWish(),false);
+		Event.call(GetId("iwish"),"mouseout",changeoutWish(),false);
+		function changeWish(){
+			return function(){
+				$("#iwish_a").stop().animate({opacity: '0'},800);  
+				$("#iwish_al").stop().animate({opacity: '1'},800);
+				set = setTimeout(function(){
+					wish();
+				}, 1000);
+			};
+		};
+
+		function changeoutWish(){
+			return function(){
+				$('#iwish_a').stop().animate({opacity: '1'},800);  
+				$('#iwish_al').stop().animate({opacity: '0'},800);
+				clearTimeout(set);
+			};
+		};
+	};
+	function mywish(){
+		var set;
+		Event.call(GetId("mywish"),"mouseover",changeWish(),false);
+		Event.call(GetId("mywish"),"mouseout",changeoutWish(),false);
+		function changeWish(){
+			return function(){  
+				$("#mywish2").stop().animate({opacity: '1'},800);
+				set = setTimeout(function(){
+					wish();
+				}, 1000);
+			};
+		};
+
+		function changeoutWish(){
+			return function(){
+				$('#mywish2').stop().animate({opacity: '0'},800);
+				clearTimeout(set);
+			};
+		};
+	}
+	wish();mywish();
+})();
+
+
+/*  遮蔽动画 */
+
+function Css(name,value){
+    this.style[name] = value;
+};
+(function(){
+
+    function Animation(name,now,target){
+            now = now - 0.1;
+            Css.call(this,name,now);
+            if(now < 0.5){
+                Css.call(GetId("shadow_all"),name,now);
+            };
+        if(now <= target){
+            Css.call(this,"display","none");
+            Css.call(GetId("shadow_all"),"display","none");
+            return;
+        };
+        setTimeout(function(){
+            Animation(name,now,target);
+        },100);
+    };
+    function Animation_show(name,now,target){
+        now = now + 0.1;
+        Css.call(this,name,now);
+        if(now < 0.5){
+            Css.call(GetId("shadow_all"),name,now);
+        };
+        if(now >= target){
+            return;
+        };
+        setTimeout(function(){
+            Animation_show(name,now,target);
+        },50);
+    };
+    Css.call(GetId("shadow_all"),"height",document.body.scrollHeight + "px");
+    Css.call(GetId("shadow_all"),"width",document.body.scrollWidth + "px");
+	
+    var lightBottles = document.getElementById("tree").getElementsByTagName("div");
+    var bodyAll = document.getElementsByTagName("body")[0];
+    var watch_wish = getElementsByClassName(bodyAll,"watch_wish");
+	
+	var cancle3 = [];
+	function show(i){
+		return function(){
+			if(document.addEventListener){
+				document.body.style.overflow = "hidden";
+				watch_wish[i].style.display = "block";
+				Css.call(GetId("shadow_all"),"display","block");
+				watch_wish[i].style.opacity = "1";
+			}else{
+				watch_wish[i].style.display = "block";
+				Css.call(GetId("shadow_all"),"display","block");
+			};
+			cancle3 = getElementsByClassName(bodyAll,"cancle3");
+			Event.call(cancle3[i],"click",disappear(i),false);
+		}
+	};
+	function disappear(i){
+		return function(){
+			if(document.addEventListener){
+				Css.call(GetId("shadow_all"),"display","none");
+				watch_wish[i].style.display = "none";
+			}else{
+				Css.call(watch_wish[i],"display","none");
+				Css.call(GetId("shadow_all"),"display","none");
+			}
+		};
+	};
+	for (var i = 0,max = lightBottles.length; i < max; i++) {
+		Event.call(lightBottles[i],"click",show(i),false);
+		// cancle3[i] = watch_wish[i].getElementsByClassName("cancle3");
+		// Event.call(cancle3[i][0],"click",disappear(i),false);
+	};
+})();
+(function(){
+    /*  遮蔽动画 */
+    if(document.getElementById("register_show")){
+		document.getElementById("iwish").onclick = function(){
+			alert("要先登录哟亲~")
+        }
+    }else{
+		panduan();
+	}
+    function panduan(){
+    function Animation(name,now,target){
+            now = now - 0.1;
+            Css.call(GetId("small_window"),name,now);
+            if(now < 0.5){
+                Css.call(GetId("shadow_all"),name,now);
+            };
+        if(now <= target){
+            Css.call(GetId("small_window"),"display","none");
+            Css.call(GetId("shadow_all"),"display","none");
+            return;
+        };
+        setTimeout(function(){
+            Animation(name,now,target);
+        },100);
+    };
+    function Animation_show(name,now,target){
+        now = now + 0.1;
+        Css.call(GetId("small_window"),name,now);
+        if(now < 0.5){
+            Css.call(GetId("shadow_all"),name,now);
+        };
+        if(now >= target){
+            return;
+        };
+        setTimeout(function(){
+            Animation_show(name,now,target);
+        },50);
+    };
+    Css.call(GetId("shadow_all"),"height",document.body.scrollHeight + "px");
+    Css.call(GetId("shadow_all"),"width",document.body.scrollWidth + "px");
+    Event.call(GetId("cancle4"),"click",function(){
+        if(document.addEventListener){
+            Css.call(document.body,"overflow","scroll");
+            Animation.call(GetId("small_window"),"opacity",1,0);
+        }else{
+            Css.call(GetId("small_window"),"display","none");
+            Css.call(GetId("shadow_all"),"display","none");
+        }
+    },false);
+    Event.call(GetId("iwish"),"click",function(){
+        if(document.addEventListener){
+            Css.call(document.body,"overflow","hidden");
+            Css.call(GetId("small_window"),"display","block");
+            Css.call(GetId("shadow_all"),"display","block");
+            Animation_show.call(GetId("small_window"),"opacity",0,1);
+        }else{
+            Css.call(GetId("small_window"),"display","block");
+            Css.call(GetId("shadow_all"),"display","block");
+        }
+    },false);
+	}
+})();
+
+(function(){
+    var clicknum = 0;
+    var checkimg = document.getElementById("checkimg")
+    if (checkimg.addEventListener) {
+        checkimg.addEventListener("click",function(){
+            numChange1();
+        }, false);
+    }else{
+        checkimg.attachEvent("onclick", function(){
+            numChange1();
+        })
+    };
+    function numChange1(){
+        clicknum++;
+        if(clicknum % 2 != 0){
+            checkimg.style.background = "url(/lovewall/lovewall/home/views/default/resource/images/checkbox.png)";
+        }else if(clicknum % 2 == 0){
+            checkimg.style.background = "url(/lovewall/lovewall/home/views/default/resource/images/check.png)";
+        }
+    }
+    $("#checkimg").click(function(){
+        $("#check").click();
+    })
+})();
+
+//zishuxianzhi
+(function(){
+    function GetId(name){
+        return document.getElementById(name);
+    };
+    var wordsize;
+    var maxlength = 140;
+    function cleartitle(){
+        GetId("iwish_text").innerHTML = "";
+        GetId("iwish_text").style.color = "black";
+    };
+    Event.call(GetId("iwish_text"),"click",function(){
+    	cleartitle();
+        getwordsize();
+    },false);
+    function getwordsize(){
+        wordsize = GetId("iwish_text").value.length;
+        setTimeout(function(){
+            getwordsize();
+            setwordsize();
+        }, 100);
+    };
+    function setwordsize(){
+        var maxText = GetId("iwish_text").getAttribute("maxlength");
+        if(wordsize >= maxlength){ 
+            GetId("iwish_text").value = GetId("iwish_text").value.substring(0,maxlength); 
+        }
+        GetId("wordsize").innerHTML = "(" + wordsize + "/140)";
+    };
+})();
+//改变树的背景
+(function(){
+	var date = new Date(),time = date.getHours();
+	var main = document.getElementById("main");
+	if(time > 6 && time < 18){
+		main.style.backgroundImage = "url(/lovewall/lovewall/home/views/default/resource/images/tree_background.png)";
+	}else{
+		main.style.backgroundImage = "url(/lovewall/lovewall/home/views/default/resourceimages/tree_background_night.png)";
+	}
+})();

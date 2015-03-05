@@ -1,0 +1,10 @@
+<?php
+	class Pic {
+		function getPic($id) {
+			$data = $this->where(array("album_id"=>$id))
+						->order("add_time desc")
+						->select();
+			return $data;
+		}
+		
+	}

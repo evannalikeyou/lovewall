@@ -1,0 +1,181 @@
+<?php /* Smarty version 2.6.18, created on 2013-08-29 10:12:58
+         compiled from tree/index.html */ ?>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--引入css和js的公共文件-->
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "public/title.inc.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+</head>
+<body>
+	<!--[if IE 8]><body class="ie"><![endif]-->
+    <!--[if IE 7]><body class="ie"><![endif]-->
+	<!-- start of the header -->
+
+    <div id="shadow_all"></div>
+	<!--引入注册的公共文件-->
+    <?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "public/register.inc.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+	<!--引入登录的公共文件-->
+	<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "public/login.inc.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+	<!--引入导航栏-->
+	<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "public/header.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+    
+    <div id="small_window">
+        <a id="cancle4" class="cancleAll"></a>
+        <form id="window_content">
+            <p>输入你想许的愿望<p>
+            <textarea id="iwish_text" name="text"></textarea>
+            <p id="checkin">
+                <input type="checkbox" name="check" id="check">
+                <a id="checkimg"></a>匿名
+                <span id="wordsize">( 0/140 )</span>
+            </p>
+            <div id="info">
+                <p>邮箱（选填）</p>
+                <input type="text" name="mailbox">
+                <p>电话（选填）</p>
+                <input type="text" name="phone">
+                <p id="info_span"><span>*</span>每人每周限发1条</p>
+            </div>
+            <button  type="button" name="submit">提交</button>
+        </form>
+    </div>
+
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">11111XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">22222XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">33333XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text">XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！XXX 啊啊啊啊啊啊啊，你还好吗好无聊啊，怎么办怎么办，我是周总理，哈哈哈哈，呸呸呸，无聊死了，！！</p>
+        <p  class="user">匿名用户</p>
+        <p  class="information">邮箱：10114052102@qq.com</p>
+        <p  class="information">电话：1111111115</p>
+    </div>
+    </div>
+
+    <div id="main">
+        <div id="tree">
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+        </div>
+        <div id="iwish">
+            <a id="iwish_a"></a>
+            <a id="iwish_al"></a>
+        </div>
+        <div id="mywish">
+            <a href="<?php echo $this->_tpl_vars['app']; ?>
+/myCenter/index" id="mywish1"></a>
+            <a href="<?php echo $this->_tpl_vars['app']; ?>
+/myCenter/index" id="mywish2"></a>
+        </div>
+    </div>
+ <!--引入底部版本信息和js文件的公共文件-->
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "public/footer.inc.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>  
+</body>
+</html>

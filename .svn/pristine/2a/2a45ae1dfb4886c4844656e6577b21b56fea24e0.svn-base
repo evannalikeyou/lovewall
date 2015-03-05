@@ -1,0 +1,8 @@
+<?php
+	class OriginalityAction extends Common {
+		function index(){
+			$this->assign('title','创意表白----'.TITLE);
+			$this->assign('script','originality');
+			$this->display();
+		}		
+	}

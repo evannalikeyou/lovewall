@@ -1,0 +1,33 @@
+<?php
+	class Lovewall {
+		function index(){
+			$this->assign('title','表白墙----'.TITLE);
+			$this->assign('script','lovewall');
+			$this->display();
+		}
+
+		function lister() {
+			$art = D("article");
+			$data = $art->where(array("type"=>0))
+						->order("ptime,desc")
+						->select();
+			$this->assign("data",$data);
+			$this->display("index");
+		}
+		
+		function saylove() {
+			$art = D("article");
+			$content = htmlspecialchars($_POST["text"]);
+			$email = htmlspecialchars($_POST["mailbox"]);
+			$_POST["content"] = $content;
+			$_POST["email"] = $email;
+			$_POST["type"] = 0;
+			if ($art->insert()) {
+				$this->success("发表成功，请等候审核",2,"mycenter/index");
+			}else {
+				$this->error("发表失败",3,"index");
+			}
+		}
+		
+	}
+	

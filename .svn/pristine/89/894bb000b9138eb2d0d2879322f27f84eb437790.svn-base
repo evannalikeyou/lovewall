@@ -1,0 +1,7 @@
+<?php
+	class Set{
+		function index(){
+			$this->assign('title','网站配置----'.TITLE.'管理系统');
+			$this->display();
+		}
+	}

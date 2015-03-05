@@ -1,0 +1,47 @@
+<?php
+	class User{
+		/**
+			前后台公用登陆方法
+			@param1 string 用户名
+			@param2 string 密码
+			@param3 string 登陆类型(1=以邮箱登陆 2=以用户id登陆 3=以用户名登陆) 默认name
+			@return boolean 
+		*/
+		public function pub_login(){
+			$post_pass= strtolower(md5($_POST['password']));
+			$re=$this->field('id')->where(array('username'=>$_POST['username']))->find();
+			if(!empty($re)){
+				$user_info=$this->where(array('id'=>$re['id'],'username'=>$_POST['username'],'password'=>$post_pass))->find();
+				if(!empty($user_info)){
+					//后台登陆,自动为前台设置已登陆
+					$_SESSION['home_login']=1;
+					$user_info['last_time']=time();
+					$user_info['last_ip']=ip_to_long($_SERVER['REMOTE_ADDR']);
+					$user_info['login_num']+=1;
+					$this->update($user_info);
+					//给session附上用户信息
+					$_SESSION['user_info']=$user_info;
+					// 清除验证码
+					unset($_SESSION['code']);
+					return 1;
+				}else{
+					return 2;
+				}
+			}else{
+				return 3;	
+			}
+		}
+		
+		/*
+			前后台公用退出方法
+			@return boolean
+		*/
+		public function pub_logout(){
+			unset($_SESSION['user_info']);
+			unset($_SESSION['admin_login']);
+			unset($_SESSION['home_login']);
+			return true;
+		}
+	
+	}
+?>

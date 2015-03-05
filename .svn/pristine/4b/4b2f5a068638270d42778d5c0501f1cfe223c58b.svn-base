@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+li{
+	display: inline-block;
+}
+p{
+    font-size: 12px;
+}
+img{
+    border: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+body{
+	font-family: "微软雅黑";
+}
+input{
+	height: 18px;
+	border: 1px solid #d8d5d6;
+	border-radius: 5%;
+}
+textarea{
+	resize: none;
+	border: 1px solid #d8d5d6;
+	border-radius: 2%;
+}
+textarea:focus{
+	outline: none;
+	outline: 1px solid #dae9fa;
+	box-shadow: 0 0 2px 2px #e9f2fc;
+}
+form p{
+	text-align-last: justify;
+	display: inline-block;
+	*+float: left;
+	font-size: 16px;
+	color: #73aae8;
+	font-family: "微软雅黑";
+}
+input:focus{
+	outline: none;
+	outline: 1px solid #dae9fa;
+	box-shadow: 0 0 2px 2px #e9f2fc;
+}
+form{
+	display: block;
+	text-align: center;
+}
+button{
+	cursor: pointer;
+	border: none;
+	width: 67px;
+	height: 22px;
+	color: #fff;
+	font-size: 14px;
+	background: url(../images/turesubmit.png);
+}
+#header{
+	width: 100%;
+	height: 52px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 900;
+	text-align: center;
+	background: rgba(255,255,255,.8);
+	filter: alpha(opacity = 80);
+}
+#nav{
+	width: 1002px;
+	position: relative;
+	margin: 0 auto;
+}
+#nav ul{
+	display: inline-block;
+	float: left;
+	margin-right: 510px;
+}
+#nav ul li{
+	float: left;
+}
+#nav ul li a{
+	color: #4b9eff;
+	font-size: 1.3em;
+	font-family: "微软雅黑";
+	display: inline-block;
+	padding: 8px 16px;
+	position: relative;
+	z-index: 101;
+	-webkit-transition:all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	transition: all all 400ms ease;
+}
+.ie #nav ul li a:hover{
+	background-color: rgb(255,207,211);
+	color: #fff;
+}
+#nav ul li a:hover{
+	*+background-color: rgb(255,207,211);
+	*+color: #fff;
+}
+#nav p{
+	margin-top: 15px;
+}
+#nav p,#nav p a{
+	color: #4b9eff;
+	font-size: 14px;
+	font-family: "新宋体";
+	display: inline-block;
+}
+#header_top{
+	width: 100%;
+	height: 2px;
+	background: #a6cfff;
+}
+#header_line{
+	width: 100%;
+	height: 6px;
+	background: #d2e7ff;
+	float: left;
+}
+.ie #block{
+	height: 44px;
+}
+#block{
+	height: 44px;
+	background: rgba(255,207,211,.6);
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	*background: rgb(255,207,211);
+	background: rgb(255,207,211)\9;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+#nav ul li:nth-child(1):hover ~ div{
+	width: 74px;
+	left: 0px;
+}
+#nav ul li:nth-child(2):hover ~ div{
+	width: 95px;
+	left: 74px;
+}
+#nav ul li:nth-child(3):hover ~ div{
+	left: 169px;
+	width: 95px;
+}
+#nav ul li:nth-child(4):hover ~ div{
+	left: 264px;
+	width: 116px;
+}
+#main{
+	position: relative;
+	z-index: 50;
+}
+#footer{
+	width: 100%;
+	text-align: center;
+}
+#footer p,#footer p a{
+	color: #a9a9a9;
+}
+#footer a:hover{
+	text-decoration: underline;
+}
+#clear{
+	clear: both;
+}
+/*log in and register*/
+#shadow_all{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 997;
+    background: #000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+}
+#register{
+	position: absolute;
+	z-index: 998;
+	width: 389px;
+	height: 267px;
+	background: url(../images/register.png);
+	left: 50%;
+	top: 30%;
+	margin-left: -194.5px;
+	display: none;
+	opacity: 0;
+}
+.cancleAll{
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	display: block;
+	width: 56px;
+	height: 54px;
+	z-index: 999;
+	background: url(../images/cancle_button.png) no-repeat;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+.cancleAll:hover{
+	background: url(../images/cancle_hover.png) no-repeat;;
+}
+#register form input{
+	width: 234px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+#register form p{
+	margin-top: 30px;
+	width: 64px;
+	*+margin-left: 20px;
+}
+#register form button{
+	margin: 24px 0 0 256px;
+}
+#login{
+	display: table-cell;
+	position: absolute;
+	z-index: 999;
+	width: 300px;
+	height: 228px;
+	padding: 0 55px;
+	background: url(../images/log_in.png);
+	left: 50%;
+	top: 30%;
+	margin-left: -205px;
+	display: none;
+	opacity: 0;
+}
+#login form input{
+	width: 172px;
+	margin-top: 16px;
+	*+margin-left: 50px;
+}
+#login form{
+	margin-top: 15%;
+	text-align: left;
+	*+position: relative;
+}
+#login form p{
+	margin-right: 13px;
+	margin-top: 20px;
+	*+position: absolute;
+	*+margin-right: 0px;
+}
+#login form a{
+	color: #969393;
+	font-size: 12px;
+	font-family: "宋体";
+	*+margin-left: 10px;
+}
+#login form button{
+	position: relative;
+	margin-top: 33px;
+	margin-left: -33.5px;
+	left: 50%;
+	*+left: 40%;
+	*+margin-left: -44.5px;
+	display: inline-block;
+}
+/*log in and register*/

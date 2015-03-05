@@ -1,0 +1,51 @@
+<?php
+	class Article{
+		/**
+			取出所有表白数据
+			并附上一些文字信息
+		*/
+		public function get_all_profess_info($arr){
+			$user=D('User','home');
+			foreach($arr as &$v){
+				$v['username']=$user->user_name($v['uid']);
+				if($v['post_type']==0){
+					$v['post_type_true']='微信';	
+				}else{
+					$v['post_type_true']='网站';
+				}
+				if($v['audit']==2){
+					$v['audit_state']='审核通过';	
+				}elseif($v['audit']==1){
+					$v['audit_state']='审核不通过';
+					}else{
+					$v['audit_state']='正在审核';
+						}
+				
+			}
+			return $arr;
+		}
+	
+		/**
+			根据文章id获取一条较全数据
+			并附上一些文字信息
+		*/
+		public function find_info($aid){
+			$user=D('User','home');
+			$info=$this->field('id,uid,post_type,ptime,ta_email,user_type,content')->where('id='.$aid)->find();
+			$info['username']=$user->user_name($info['uid']);
+			$info['email']=$user->user_email($info['uid']);
+			if($info['user_type']==1){
+				$info['is_hide']='否';
+			}else{
+				$info['is_hide']='是';	
+			}
+			if($info['post_type']==1){
+				$info['sub_type']='网站';
+			}else{
+				$info['sub_type']='微信';	
+			}
+			return $info;
+		}
+	
+	}
+?>

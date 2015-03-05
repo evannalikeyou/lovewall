@@ -1,0 +1,695 @@
+[31-Aug-2013 16:47:07 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in E:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 146
+[31-Aug-2013 16:47:07 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:07 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:07 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:07 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:07 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:07 PRC] PHP   5. D() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:6
+[31-Aug-2013 16:47:07 PRC] PHP   6. Dpdo->setTable() E:\wamp\www\lovewall\brophp\commons\functions.inc.php:58
+[31-Aug-2013 16:47:12 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in E:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 146
+[31-Aug-2013 16:47:12 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:12 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:12 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:12 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:12 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:12 PRC] PHP   5. D() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:4
+[31-Aug-2013 16:47:12 PRC] PHP   6. Dpdo->setTable() E:\wamp\www\lovewall\brophp\commons\functions.inc.php:58
+[31-Aug-2013 16:47:36 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:36 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:36 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:36 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:36 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:36 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:36 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[31-Aug-2013 16:47:47 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:47 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:47 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:47 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:47 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:47 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:47 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:47:47 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:47:47 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:47 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:47 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:47 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:47 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:47 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:47:47 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 16:47:49 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:49 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:49 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:49 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:49 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:49 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:49 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[31-Aug-2013 16:47:51 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:51 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:51 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:51 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:51 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:51 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:51 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[31-Aug-2013 16:47:53 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:53 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:53 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:53 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:53 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:53 PRC] PHP   4. MyCenterAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:53 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:47:55 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:47:55 PRC] PHP Stack trace:
+[31-Aug-2013 16:47:55 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:47:55 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:47:55 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:47:55 PRC] PHP   4. MyCenterAction->myExpression() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:47:55 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:23
+[31-Aug-2013 16:48:04 PRC] PHP Notice:  Undefined variable: ascii in E:\wamp\www\lovewall\brophp\classes\vcode.class.php on line 74
+[31-Aug-2013 16:48:04 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:04 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:04 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:04 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:04 PRC] PHP   4. LoginAction->code() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:04 PRC] PHP   5. Vcode->__construct() E:\wamp\www\lovewall\runtime\controls\lovewall_admin_php\loginaction.class.php:20
+[31-Aug-2013 16:48:04 PRC] PHP   6. Vcode->createCheckCode() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:37
+[31-Aug-2013 16:48:04 PRC] PHP Notice:  Uninitialized string offset: 4 in E:\wamp\www\lovewall\brophp\classes\vcode.class.php on line 100
+[31-Aug-2013 16:48:04 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:04 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:04 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:04 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:04 PRC] PHP   4. LoginAction->code() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:04 PRC] PHP   5. Vcode->__toString() E:\wamp\www\lovewall\brophp\bases\action.class.php:20
+[31-Aug-2013 16:48:04 PRC] PHP   6. Vcode->outImg() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:47
+[31-Aug-2013 16:48:04 PRC] PHP   7. Vcode->outputText() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:54
+[31-Aug-2013 16:48:12 PRC] PHP Warning:  Smarty error: unable to read resource: "public/footer.tpl" in E:\wamp\www\lovewall\brophp\libs\Smarty.class.php on line 1095
+[31-Aug-2013 16:48:12 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:12 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:12 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:12 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:12 PRC] PHP   4. LoginAction->login() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:12 PRC] PHP   5. Action->error() E:\wamp\www\lovewall\runtime\controls\lovewall_admin_php\loginaction.class.php:52
+[31-Aug-2013 16:48:12 PRC] PHP   6. Mytpl->display() E:\wamp\www\lovewall\brophp\bases\action.class.php:83
+[31-Aug-2013 16:48:12 PRC] PHP   7. Smarty->display() E:\wamp\www\lovewall\brophp\bases\mytpl.class.php:51
+[31-Aug-2013 16:48:12 PRC] PHP   8. Smarty->fetch() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1108
+[31-Aug-2013 16:48:12 PRC] PHP   9. include() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1258
+[31-Aug-2013 16:48:12 PRC] PHP  10. Smarty->_smarty_include() E:\wamp\www\lovewall\runtime\comps\default\lovewall_admin_php\%%EA^EA7^EA7E60F3%%success.html.php:74
+[31-Aug-2013 16:48:12 PRC] PHP  11. Smarty->_compile_resource() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1869
+[31-Aug-2013 16:48:12 PRC] PHP  12. Smarty->_fetch_resource_info() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1417
+[31-Aug-2013 16:48:12 PRC] PHP  13. Smarty->trigger_error() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1591
+[31-Aug-2013 16:48:12 PRC] PHP  14. trigger_error() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1095
+[31-Aug-2013 16:48:14 PRC] PHP Notice:  Undefined offset: 1 in E:\wamp\www\lovewall\brophp\bases\prourl.class.php on line 32
+[31-Aug-2013 16:48:14 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:14 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:14 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:14 PRC] PHP   3. Prourl::parseUrl() E:\wamp\www\lovewall\brophp\brophp.php:113
+[31-Aug-2013 16:48:14 PRC] PHP Notice:  Undefined variable: ascii in E:\wamp\www\lovewall\brophp\classes\vcode.class.php on line 74
+[31-Aug-2013 16:48:14 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:14 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:14 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:14 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:14 PRC] PHP   4. LoginAction->code() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:14 PRC] PHP   5. Vcode->__construct() E:\wamp\www\lovewall\runtime\controls\lovewall_admin_php\loginaction.class.php:20
+[31-Aug-2013 16:48:14 PRC] PHP   6. Vcode->createCheckCode() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:37
+[31-Aug-2013 16:48:14 PRC] PHP Notice:  Uninitialized string offset: 4 in E:\wamp\www\lovewall\brophp\classes\vcode.class.php on line 100
+[31-Aug-2013 16:48:14 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:14 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:14 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:14 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:14 PRC] PHP   4. LoginAction->code() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:14 PRC] PHP   5. Vcode->__toString() E:\wamp\www\lovewall\brophp\bases\action.class.php:20
+[31-Aug-2013 16:48:14 PRC] PHP   6. Vcode->outImg() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:47
+[31-Aug-2013 16:48:14 PRC] PHP   7. Vcode->outputText() E:\wamp\www\lovewall\brophp\classes\vcode.class.php:54
+[31-Aug-2013 16:48:19 PRC] PHP Warning:  Smarty error: unable to read resource: "public/footer.tpl" in E:\wamp\www\lovewall\brophp\libs\Smarty.class.php on line 1095
+[31-Aug-2013 16:48:19 PRC] PHP Stack trace:
+[31-Aug-2013 16:48:19 PRC] PHP   1. {main}() E:\wamp\www\lovewall\admin.php:0
+[31-Aug-2013 16:48:19 PRC] PHP   2. require() E:\wamp\www\lovewall\admin.php:8
+[31-Aug-2013 16:48:19 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:48:19 PRC] PHP   4. LoginAction->login() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:48:19 PRC] PHP   5. Action->error() E:\wamp\www\lovewall\runtime\controls\lovewall_admin_php\loginaction.class.php:47
+[31-Aug-2013 16:48:19 PRC] PHP   6. Mytpl->display() E:\wamp\www\lovewall\brophp\bases\action.class.php:83
+[31-Aug-2013 16:48:19 PRC] PHP   7. Smarty->display() E:\wamp\www\lovewall\brophp\bases\mytpl.class.php:51
+[31-Aug-2013 16:48:19 PRC] PHP   8. Smarty->fetch() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1108
+[31-Aug-2013 16:48:19 PRC] PHP   9. include() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1258
+[31-Aug-2013 16:48:19 PRC] PHP  10. Smarty->_smarty_include() E:\wamp\www\lovewall\runtime\comps\default\lovewall_admin_php\%%EA^EA7^EA7E60F3%%success.html.php:74
+[31-Aug-2013 16:48:19 PRC] PHP  11. Smarty->_compile_resource() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1869
+[31-Aug-2013 16:48:19 PRC] PHP  12. Smarty->_fetch_resource_info() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1417
+[31-Aug-2013 16:48:19 PRC] PHP  13. Smarty->trigger_error() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1591
+[31-Aug-2013 16:48:19 PRC] PHP  14. trigger_error() E:\wamp\www\lovewall\brophp\libs\Smarty.class.php:1095
+[31-Aug-2013 16:52:29 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:52:29 PRC] PHP Stack trace:
+[31-Aug-2013 16:52:29 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:52:29 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:52:29 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:52:29 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:52:29 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[31-Aug-2013 16:52:31 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:52:31 PRC] PHP Stack trace:
+[31-Aug-2013 16:52:31 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:52:31 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:52:31 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:52:31 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:52:31 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:52:31 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:52:31 PRC] PHP Stack trace:
+[31-Aug-2013 16:52:31 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:52:31 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:52:31 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:52:31 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:52:31 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:52:31 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 16:54:11 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:54:11 PRC] PHP Stack trace:
+[31-Aug-2013 16:54:11 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:54:11 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:54:11 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:54:11 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:54:11 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:54:11 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:54:11 PRC] PHP Stack trace:
+[31-Aug-2013 16:54:11 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:54:11 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:54:11 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:54:11 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:54:11 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:54:11 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 16:54:13 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:54:13 PRC] PHP Stack trace:
+[31-Aug-2013 16:54:13 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:54:13 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:54:13 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:54:13 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:54:13 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:54:13 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:54:13 PRC] PHP Stack trace:
+[31-Aug-2013 16:54:13 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:54:13 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:54:13 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:54:13 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:54:13 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:54:13 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 16:59:34 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:59:34 PRC] PHP Stack trace:
+[31-Aug-2013 16:59:34 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:59:34 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:59:34 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:59:34 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:59:34 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:59:34 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:59:34 PRC] PHP Stack trace:
+[31-Aug-2013 16:59:34 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:59:34 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:59:34 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:59:34 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:59:34 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:59:34 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 16:59:43 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 16:59:43 PRC] PHP Stack trace:
+[31-Aug-2013 16:59:43 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:59:43 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:59:43 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:59:43 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:59:43 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 16:59:43 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 16:59:43 PRC] PHP Stack trace:
+[31-Aug-2013 16:59:43 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 16:59:43 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 16:59:43 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 16:59:43 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 16:59:43 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 16:59:43 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 17:01:36 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:01:36 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:36 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:36 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:36 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:36 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:36 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 17:01:36 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 17:01:36 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:36 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:36 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:36 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:36 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:36 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 17:01:36 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 17:01:42 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:01:42 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:42 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:42 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:42 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:42 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:42 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 17:01:47 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 17:01:47 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:47 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:47 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:47 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:47 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:47 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 17:01:47 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 17:01:47 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:01:47 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:47 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:47 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:47 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:47 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:47 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 17:01:47 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 17:01:47 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:47 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:47 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:47 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:47 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:47 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 17:01:47 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 17:01:53 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:01:53 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:53 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:53 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:53 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:53 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:53 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[31-Aug-2013 17:01:53 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[31-Aug-2013 17:01:53 PRC] PHP Stack trace:
+[31-Aug-2013 17:01:53 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:01:53 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:01:53 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:01:53 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:01:53 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[31-Aug-2013 17:01:53 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[31-Aug-2013 17:02:56 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:02:56 PRC] PHP Stack trace:
+[31-Aug-2013 17:02:56 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:02:56 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:02:56 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:02:56 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:02:56 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[31-Aug-2013 17:03:03 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[31-Aug-2013 17:03:03 PRC] PHP Stack trace:
+[31-Aug-2013 17:03:03 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[31-Aug-2013 17:03:03 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[31-Aug-2013 17:03:03 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[31-Aug-2013 17:03:03 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[31-Aug-2013 17:03:03 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Sep-2013 12:58:44 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Sep-2013 12:58:44 PRC] PHP Stack trace:
+[03-Sep-2013 12:58:44 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:58:44 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:58:44 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:58:44 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:58:44 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Sep-2013 12:58:50 PRC] PHP Notice:  Undefined variable: arr in E:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php on line 32
+[03-Sep-2013 12:58:50 PRC] PHP Stack trace:
+[03-Sep-2013 12:58:50 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:58:50 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:58:50 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:58:50 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:58:50 PRC] PHP   5. ArticleModel->look() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Sep-2013 12:58:56 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Sep-2013 12:58:56 PRC] PHP Stack trace:
+[03-Sep-2013 12:58:56 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:58:56 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:58:56 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:58:56 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:58:56 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Sep-2013 12:58:59 PRC] PHP Notice:  Undefined variable: arr in E:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php on line 32
+[03-Sep-2013 12:58:59 PRC] PHP Stack trace:
+[03-Sep-2013 12:58:59 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:58:59 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:58:59 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:58:59 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:58:59 PRC] PHP   5. ArticleModel->look() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Sep-2013 12:59:00 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Sep-2013 12:59:00 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:00 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:00 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:00 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:00 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:00 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[03-Sep-2013 12:59:00 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[03-Sep-2013 12:59:00 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:00 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:00 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:00 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:00 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:00 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[03-Sep-2013 12:59:00 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[03-Sep-2013 12:59:02 PRC] PHP Notice:  Undefined variable: arr in E:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php on line 32
+[03-Sep-2013 12:59:02 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:02 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:02 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:02 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:02 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:02 PRC] PHP   5. ArticleModel->look() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Sep-2013 12:59:09 PRC] PHP Notice:  Undefined variable: arr in E:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php on line 32
+[03-Sep-2013 12:59:09 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:09 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:09 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:09 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:09 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:09 PRC] PHP   5. ArticleModel->look() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Sep-2013 12:59:10 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Sep-2013 12:59:10 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:10 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:10 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:10 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:10 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:10 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Sep-2013 12:59:11 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Sep-2013 12:59:11 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:11 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:11 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:11 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:11 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:11 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[03-Sep-2013 12:59:11 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[03-Sep-2013 12:59:11 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:11 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:11 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:11 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:11 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:11 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[03-Sep-2013 12:59:11 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[03-Sep-2013 12:59:16 PRC] PHP Notice:  Undefined variable: arr in E:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php on line 32
+[03-Sep-2013 12:59:16 PRC] PHP Stack trace:
+[03-Sep-2013 12:59:16 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[03-Sep-2013 12:59:16 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[03-Sep-2013 12:59:16 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Sep-2013 12:59:16 PRC] PHP   4. TreeAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Sep-2013 12:59:16 PRC] PHP   5. ArticleModel->look() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[24-Sep-2013 16:05:58 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[24-Sep-2013 16:05:58 PRC] PHP Stack trace:
+[24-Sep-2013 16:05:58 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[24-Sep-2013 16:05:58 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[24-Sep-2013 16:05:58 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[24-Sep-2013 16:05:58 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[24-Sep-2013 16:05:58 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[24-Sep-2013 16:06:05 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[24-Sep-2013 16:06:05 PRC] PHP Stack trace:
+[24-Sep-2013 16:06:05 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[24-Sep-2013 16:06:05 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[24-Sep-2013 16:06:05 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[24-Sep-2013 16:06:05 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[24-Sep-2013 16:06:05 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[30-Nov-2013 16:01:32 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[30-Nov-2013 16:01:32 PRC] PHP Stack trace:
+[30-Nov-2013 16:01:32 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[30-Nov-2013 16:01:32 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[30-Nov-2013 16:01:32 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[30-Nov-2013 16:01:32 PRC] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[30-Nov-2013 16:01:32 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[30-Nov-2013 16:01:43 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[30-Nov-2013 16:01:43 PRC] PHP Stack trace:
+[30-Nov-2013 16:01:43 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[30-Nov-2013 16:01:43 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[30-Nov-2013 16:01:43 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[30-Nov-2013 16:01:43 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[30-Nov-2013 16:01:43 PRC] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[30-Nov-2013 16:01:43 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\brophp\classes\page.class.php on line 86
+[30-Nov-2013 16:01:43 PRC] PHP Stack trace:
+[30-Nov-2013 16:01:43 PRC] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[30-Nov-2013 16:01:43 PRC] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[30-Nov-2013 16:01:43 PRC] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[30-Nov-2013 16:01:43 PRC] PHP   4. OriginalityAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[30-Nov-2013 16:01:43 PRC] PHP   5. AlbumModel->getAlbum() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:9
+[30-Nov-2013 16:01:43 PRC] PHP   6. __autoload() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:4
+[20-Dec-2013 08:14:42] PHP Warning:  The magic method __get() must have public visibility and cannot be static in E:\wamp\www\lovewall\classes\pager.class.php on line 86
+[20-Dec-2013 08:14:42] PHP Stack trace:
+[20-Dec-2013 08:14:42] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[20-Dec-2013 08:14:42] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[20-Dec-2013 08:14:42] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[20-Dec-2013 08:14:42] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[20-Dec-2013 08:14:42] PHP   5. __autoload() E:\wamp\www\lovewall\brophp\brophp.php:0
+[20-Dec-2013 08:15:03] PHP Warning:  PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试 (trying to connect via tcp://172.22.161.6:3306) in E:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[20-Dec-2013 08:15:03] PHP Stack trace:
+[20-Dec-2013 08:15:03] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[20-Dec-2013 08:15:03] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[20-Dec-2013 08:15:03] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[20-Dec-2013 08:15:03] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[20-Dec-2013 08:15:03] PHP   5. DB->total() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[20-Dec-2013 08:15:03] PHP   6. Dpdo->query() E:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[20-Dec-2013 08:15:03] PHP   7. Dpdo::connect() E:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[20-Dec-2013 08:15:03] PHP   8. PDO->__construct() E:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+[20-Dec-2013 08:15:03] PHP Fatal error:  Call to a member function prepare() on a non-object in E:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[20-Dec-2013 08:15:03] PHP Stack trace:
+[20-Dec-2013 08:15:03] PHP   1. {main}() E:\wamp\www\lovewall\index.php:0
+[20-Dec-2013 08:15:03] PHP   2. require() E:\wamp\www\lovewall\index.php:8
+[20-Dec-2013 08:15:03] PHP   3. Action->run() E:\wamp\www\lovewall\brophp\brophp.php:137
+[20-Dec-2013 08:15:03] PHP   4. LovewallAction->index() E:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[20-Dec-2013 08:15:03] PHP   5. DB->total() E:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[20-Dec-2013 08:15:03] PHP   6. Dpdo->query() E:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[18-May-2014 14:49:13 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[18-May-2014 14:49:13 PRC] PHP Stack trace:
+[18-May-2014 14:49:13 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[18-May-2014 14:49:13 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[18-May-2014 14:49:13 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[18-May-2014 14:49:13 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[18-May-2014 14:49:13 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[18-May-2014 14:49:34 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[18-May-2014 14:49:34 PRC] PHP Stack trace:
+[18-May-2014 14:49:34 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[18-May-2014 14:49:34 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[18-May-2014 14:49:34 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[18-May-2014 14:49:34 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[18-May-2014 14:49:34 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[18-May-2014 14:49:34 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[03-Jun-2014 22:15:43 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Jun-2014 22:15:43 PRC] PHP Stack trace:
+[03-Jun-2014 22:15:43 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:15:43 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:15:43 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:15:43 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:15:43 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Jun-2014 22:16:04 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[03-Jun-2014 22:16:04 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:04 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:04 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:04 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:04 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:04 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[03-Jun-2014 22:16:04 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[03-Jun-2014 22:16:26 PRC] PHP Warning:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+Stack trace:
+#0 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(26): PDO->__construct('mysql:host=172....', 'redrock', 'hongyanredrock', Array)
+#1 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(74): Dpdo::connect()
+#2 H:\wamp\www\lovewall\brophp\bases\db.class.php(112): Dpdo->query('SELECT id,uid,c...', 'DB::select', Array)
+#3 H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php(10): DB->select()
+#4 H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php(19): ArticleModel->getContent(1)
+#5 H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php(8): ArticleModel->look()
+#6 H:\wamp\www\lovewall\brophp\bases\action.class.php(30): TreeAction->index()
+#7 H:\wamp\www\lovewall\brophp\brophp.php(137): Action->run()
+#8 H:\wamp\www\lovewall\index.php(8 in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[03-Jun-2014 22:16:26 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:26 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:26 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:26 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:26 PRC] PHP   4. TreeAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:26 PRC] PHP   5. ArticleModel->look() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Jun-2014 22:16:26 PRC] PHP   6. ArticleModel->getContent() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:19
+[03-Jun-2014 22:16:26 PRC] PHP   7. DB->select() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:10
+[03-Jun-2014 22:16:26 PRC] PHP   8. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:112
+[03-Jun-2014 22:16:26 PRC] PHP   9. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[03-Jun-2014 22:16:26 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[03-Jun-2014 22:16:26 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:26 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:26 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:26 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:26 PRC] PHP   4. TreeAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:26 PRC] PHP   5. ArticleModel->look() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[03-Jun-2014 22:16:26 PRC] PHP   6. ArticleModel->getContent() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:19
+[03-Jun-2014 22:16:26 PRC] PHP   7. DB->select() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:10
+[03-Jun-2014 22:16:26 PRC] PHP   8. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:112
+[03-Jun-2014 22:16:26 PRC] PHP   9. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[03-Jun-2014 22:16:26 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\brophp.php on line 107
+[03-Jun-2014 22:16:26 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:26 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:26 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:26 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[03-Jun-2014 22:16:26 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:26 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:26 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:26 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:26 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:26 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[03-Jun-2014 22:16:47 PRC] PHP Warning:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+Stack trace:
+#0 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(26): PDO->__construct('mysql:host=172....', 'redrock', 'hongyanredrock', Array)
+#1 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(74): Dpdo::connect()
+#2 H:\wamp\www\lovewall\brophp\bases\db.class.php(80): Dpdo->query('SELECT COUNT(*)...', 'DB::total', Array)
+#3 H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php(5): DB->total()
+#4 H:\wamp\www\lovewall\brophp\bases\action.class.php(30): LovewallAction->index()
+#5 H:\wamp\www\lovewall\brophp\brophp.php(137): Action->run()
+#6 H:\wamp\www\lovewall\index.php(8): require('H:\wamp\www\lov...')
+#7 {main}
+  thrown in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[03-Jun-2014 22:16:47 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:47 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:47 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:47 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:47 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:47 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[03-Jun-2014 22:16:47 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[03-Jun-2014 22:16:47 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[03-Jun-2014 22:16:47 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[03-Jun-2014 22:16:47 PRC] PHP Stack trace:
+[03-Jun-2014 22:16:47 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[03-Jun-2014 22:16:47 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[03-Jun-2014 22:16:47 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[03-Jun-2014 22:16:47 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[03-Jun-2014 22:16:47 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[03-Jun-2014 22:16:47 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[03-Jun-2014 22:16:47 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:29:40 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[05-Jun-2014 20:29:40 PRC] PHP Stack trace:
+[05-Jun-2014 20:29:40 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:29:40 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:29:40 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:29:40 PRC] PHP   4. TreeAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:29:40 PRC] PHP   5. ArticleModel->look() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\treeaction.class.php:8
+[05-Jun-2014 20:29:40 PRC] PHP   6. ArticleModel->getContent() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:19
+[05-Jun-2014 20:29:40 PRC] PHP   7. DB->select() H:\wamp\www\lovewall\runtime\models\lovewall_index_php\articlemodel.class.php:10
+[05-Jun-2014 20:29:41 PRC] PHP   8. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:112
+[05-Jun-2014 20:29:41 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[05-Jun-2014 20:29:41 PRC] PHP Stack trace:
+[05-Jun-2014 20:29:41 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:29:41 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:29:41 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:29:41 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:29:41 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[05-Jun-2014 20:30:02 PRC] PHP Warning:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+Stack trace:
+#0 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(26): PDO->__construct('mysql:host=172....', 'redrock', 'hongyanredrock', Array)
+#1 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(74): Dpdo::connect()
+#2 H:\wamp\www\lovewall\brophp\bases\db.class.php(80): Dpdo->query('SELECT COUNT(*)...', 'DB::total', Array)
+#3 H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php(8): DB->total()
+#4 H:\wamp\www\lovewall\brophp\bases\action.class.php(30): OriginalityAction->index()
+#5 H:\wamp\www\lovewall\brophp\brophp.php(137): Action->run()
+#6 H:\wamp\www\lovewall\index.php(8): require('H:\wamp\www\lov...')
+#7 {main}
+  thrown in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:02 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:02 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:02 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:02 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:02 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:02 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:8
+[05-Jun-2014 20:30:02 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:02 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:02 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:02 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:02 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:02 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:02 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:02 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:02 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:8
+[05-Jun-2014 20:30:02 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:02 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:02 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[05-Jun-2014 20:30:02 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:02 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:02 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:02 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:02 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:02 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[05-Jun-2014 20:30:08 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[05-Jun-2014 20:30:08 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:08 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:08 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:08 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:08 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:08 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:5
+[05-Jun-2014 20:30:23 PRC] PHP Warning:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+Stack trace:
+#0 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(26): PDO->__construct('mysql:host=172....', 'redrock', 'hongyanredrock', Array)
+#1 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(74): Dpdo::connect()
+#2 H:\wamp\www\lovewall\brophp\bases\db.class.php(80): Dpdo->query('SELECT COUNT(*)...', 'DB::total', Array)
+#3 H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php(5): DB->total()
+#4 H:\wamp\www\lovewall\brophp\bases\action.class.php(30): LovewallAction->index()
+#5 H:\wamp\www\lovewall\brophp\brophp.php(137): Action->run()
+#6 H:\wamp\www\lovewall\index.php(8): require('H:\wamp\www\lov...')
+#7 {main}
+  thrown in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:23 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:23 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:23 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:23 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:23 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:23 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[05-Jun-2014 20:30:23 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:23 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:23 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:23 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:23 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:23 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:23 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:23 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:23 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[05-Jun-2014 20:30:23 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:23 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:23 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\brophp.php on line 107
+[05-Jun-2014 20:30:23 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:23 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:23 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:29 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[05-Jun-2014 20:30:29 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:29 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:29 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:29 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:29 PRC] PHP   4. LovewallAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:29 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\lovewallaction.class.php:5
+[05-Jun-2014 20:30:29 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:29 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[05-Jun-2014 20:30:29 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:29 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:29 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:30 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:30 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:30 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[05-Jun-2014 20:30:51 PRC] PHP Warning:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+' in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:26
+Stack trace:
+#0 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(26): PDO->__construct('mysql:host=172....', 'redrock', 'hongyanredrock', Array)
+#1 H:\wamp\www\lovewall\brophp\bases\dpdo.class.php(74): Dpdo::connect()
+#2 H:\wamp\www\lovewall\brophp\bases\db.class.php(80): Dpdo->query('SELECT COUNT(*)...', 'DB::total', Array)
+#3 H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php(8): DB->total()
+#4 H:\wamp\www\lovewall\brophp\bases\action.class.php(30): OriginalityAction->index()
+#5 H:\wamp\www\lovewall\brophp\brophp.php(137): Action->run()
+#6 H:\wamp\www\lovewall\index.php(8): require('H:\wamp\www\lov...')
+#7 {main}
+  thrown in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:51 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:51 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:51 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:51 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:51 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:51 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:8
+[05-Jun-2014 20:30:51 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:51 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:51 PRC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 26
+[05-Jun-2014 20:30:51 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:51 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:51 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:51 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:51 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:51 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:8
+[05-Jun-2014 20:30:51 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80
+[05-Jun-2014 20:30:51 PRC] PHP   7. Dpdo::connect() H:\wamp\www\lovewall\brophp\bases\dpdo.class.php:74
+[05-Jun-2014 20:30:51 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in H:\wamp\www\lovewall\classes\pager.class.php on line 86
+[05-Jun-2014 20:30:51 PRC] PHP Stack trace:
+[05-Jun-2014 20:30:51 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:30:51 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:30:51 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:30:51 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:30:51 PRC] PHP   5. __autoload() H:\wamp\www\lovewall\brophp\bases\action.class.php:8
+[05-Jun-2014 20:31:12 PRC] PHP Fatal error:  Call to a member function prepare() on a non-object in H:\wamp\www\lovewall\brophp\bases\dpdo.class.php on line 75
+[05-Jun-2014 20:31:12 PRC] PHP Stack trace:
+[05-Jun-2014 20:31:12 PRC] PHP   1. {main}() H:\wamp\www\lovewall\index.php:0
+[05-Jun-2014 20:31:12 PRC] PHP   2. require() H:\wamp\www\lovewall\index.php:8
+[05-Jun-2014 20:31:12 PRC] PHP   3. Action->run() H:\wamp\www\lovewall\brophp\brophp.php:137
+[05-Jun-2014 20:31:12 PRC] PHP   4. OriginalityAction->index() H:\wamp\www\lovewall\brophp\bases\action.class.php:30
+[05-Jun-2014 20:31:12 PRC] PHP   5. DB->total() H:\wamp\www\lovewall\runtime\controls\lovewall_index_php\originalityaction.class.php:8
+[05-Jun-2014 20:31:12 PRC] PHP   6. Dpdo->query() H:\wamp\www\lovewall\brophp\bases\db.class.php:80

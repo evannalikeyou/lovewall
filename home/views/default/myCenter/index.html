@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+<!--用来显示个人中心一些弹窗信息-->
+<div id="show_info">
+	<h2><span class="close">关闭</span></h2>
+    <dl class="add"></dl>
+</div>
+    <div id="shadow_all"></div>
+    <{include file="public/header.html"}>
+<!--内容背景-->
+<div id="top_background">
+    <img id="top_sky" src="<{$res}>/images/blue sky.png">
+    <img id="left_balloon"src="<{$res}>/images/left_balloon.png" alt="love">
+    <img id="right_balloon" src="<{$res}>/images/right_balloon.png" alt="love">
+</div>
+<div id="wrapper">
+    <div id="left">
+        <div id="image"><img src="<{$res}>/images/piccc.png" alt="头像">用户名</div>
+            <a href="<{$url}>/myExpression">我的表白</a>
+            <a href="<{$url}>/myWish">我的许愿</a>
+            <a href="<{$app}>/login/logout">退出登录</a>
+    </div>
+    <div id="right">
+        <table id="info">
+            <tr>
+                <th>编号</th>
+                <th>状态</th>
+                <th>匿名</th>
+                <th>操作</th>
+            </tr>
+            <{section loop = $expression name = "ls"}>
+            <tr>
+                <td>520<{$expression[ls].id}></td>
+                <{if $expression[ls].audit == 0}>
+                <td>正在审核</td>
+                <{elseif $expression[ls].audit == 1}>
+                <td>审核不通过
+                	<span style="font-size:12px; cursor:pointer; color:#03F; margin-left:10px" class="lookDetail">查看详情</span>
+                    <input type="hidden" value="<{$expression[ls].no_audit_id}>"</td>
+                <{else}>
+                <td>审核通过</td>
+                <{/if}>
+                <{if $expression[ls].user_type == 0}>
+                <td>YES</td>
+                <{else}>
+                <td>NO</td>
+                <{/if}>
+                <td><a id="delete" did="<{$expression[ls].id}>"  onClick="if(confirm('确认删除？')){return true;}else{return false;}">删除</a></td>
+            </tr>
+			<{/section}>
+
+        </table>
+        <div id="naocan"><{$fpage}></div>
+    </div>
+</div>
+<!--引入底部版本信息和js文件的公共文件-->
+<{include file="public/footer.inc.html"}>
+</body>
+</html>

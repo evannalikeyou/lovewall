@@ -1,0 +1,17 @@
+<?php
+	class Tree {
+
+		function index() {
+			//model里的tree.class.php
+			$t = D("article");
+			//取里面的look方法，就是点瓶子查看内容
+			$arr = $t->look();
+			$t->inserter();
+// 			p($_SESSION);
+ 			$this->assign("arr",$arr);
+ 			$this->assign('title','许愿树----'.TITLE);
+ 			$this->assign('script','tree'); 			
+ 			$this->display("tree/index");
+		}
+	}
+	

@@ -1,0 +1,211 @@
+
+#main{
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 0 auto;
+}
+#block{
+	left: 169px;
+	width: 95px;
+}
+.buttle{
+	display: inline-block;
+	*+float: left;
+	width: 132px;
+	height: 132px;
+	position: absolute;
+}
+.buttle a{
+	display: inline-block;
+	width: 132px;
+	height: 132px;
+	position: absolute;
+}
+.buttle_no{
+	background: url(../images/bottle.png) no-repeat;
+}
+.buttle_light{
+	background: url(../images/bottle_light.png) no-repeat;
+}
+#iwish{
+	position: absolute;
+}
+#iwish a{
+	display: inline-block;
+	width: 204px;
+	height: 196px;
+	position: absolute;
+}
+#iwish_a{
+	background: url(../images/iwish.png) no-repeat;
+}
+#iwish_al{
+	background: url(../images/iwish_light.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+#mywish{
+	position: absolute;
+}
+#mywish a{
+	display: inline-block;
+	position: absolute;
+}
+#mywish1{
+	background: url(../images/mywish.png) no-repeat;
+}
+#mywish2{
+	background: url(../images/mywish_light.png) no-repeat;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+/*shadow*/
+.watch_wish{
+	width: 463px;
+	height: 297px;
+	background: url(../images/watch_bg.png) no-repeat;
+	position: absolute;
+	z-index: 998;
+	left: 50%;
+	top: 30%;
+	margin-left: -231.5px;
+	display: none;
+	opacity: 0;
+}
+.cancle3{
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	display: block;
+	width: 56px;
+	height: 54px;
+	z-index: 999;
+	background: url(../images/cancle_button.png) no-repeat;
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+.cancle3:hover{
+	background: url(../images/cancle_hover.png) no-repeat;;
+}
+.watch_wish div{
+	position: relative;
+	left: 50%;
+	margin-left: -192.5px;
+	width: 385px;
+	text-align: left;
+}
+.information{
+	color: #64a2e1;
+	margin-left: 35px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.text{
+	margin-top: 35px;
+	text-indent: 2em;
+	color: #959a9e;
+}
+.user{
+	margin-left: 294px;
+	color: #64a2e1;
+	margin-top: 20px;
+}
+.watch_wish h5{
+	color: #64a2e1;
+	text-shadow: 1px 1px 1px #cbdcf1;
+	margin-top: 25px;
+}
+#small_window{
+    width: 463px;
+    height: 299px;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -231.5px;
+    top: 30%;
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    background: url("../images/iwishbg.png") no-repeat;
+}
+#window_content{
+    width: 400px;
+    height: 270px;
+    margin: 11px auto;
+    text-align: left;
+}
+#window_content textarea{
+    width: 400px;
+    height: 103px;
+    border: 1px solid #d6d2d3;
+    margin-top: 11px;
+    margin-bottom: 10px;
+}
+.ie #small_window form{
+	position: relative;
+	top: 15px;
+}
+#small_window form>p{
+	font-size: 14px;
+}
+#window_content a{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+#wordsize{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    font-size: 12px;
+}
+#checkin{
+    position: relative;
+    width: 400px;
+}
+#check{
+    display: none;
+}
+#checkimg{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background: url(../images/check.png);
+}
+#info input[name="mailbox"]{
+	margin-right: 50px;
+}
+#info{
+    width: 400px;
+    height: 80px;
+}
+#info input[type="text"]{
+    width: 235px;
+}
+input[name="phone"]{
+	margin-top: 13px;
+}
+#window_botton{
+	margin-left: 340px;
+}
+#info p{
+	font-size: 12px;
+}
+#info>p>span{
+    color: #fc6b91;
+}
+#window_content button{
+	margin-left: 333px;
+}
+#info_span{
+	margin-top: 10px;
+}
+/*shadow*/

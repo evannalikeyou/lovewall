@@ -1,0 +1,8 @@
+<?php
+	class TreeAction extends Common {
+		function index(){
+			$this->assign('title','许愿树----'.TITLE);
+			$this->assign('script','tree');
+			$this->display();
+		}		
+	}

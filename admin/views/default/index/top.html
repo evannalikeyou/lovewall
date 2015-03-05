@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="<{$res}>/css/top.css" />
+</head>
+<body>
+<div id="header">
+      <div id="logo">
+      </div>
+      <div id="top_r">
+          <p>
+          <a id=HyperLink2 href="<{$root}>/index.php">返回首页</a><img src="<{$res}>/images/menu_seprator.gif" align="absMiddle" /><a id=HyperLink3 href="<{$app}>/login/logout" target="_top">退出系统</a>
+          </p>
+      </div>
+      <div id="clear">
+      </div>
+      <div id="nav">
+          <table cellspacing="0" cellpadding="0" width="100%">
+              <tr>
+                  <td>
+                      <div>
+                          <img src="<{$res}>/images/nav_pre.gif" align=absMiddle> 欢迎 <span id=lblBra><{$admin_name}></SPaN> [<{$level}> ] 光临 
+                      </div>
+                  </td>
+                  <td align="right" width="70%">
+                      <span style="padding-RIGHT: 50px">
+                          <a href="javascript:history.go(-1);"><img src="<{$res}>/images/nav_back.gif" align="absMiddle" border="0">后退</a> 
+                          <a href="javascript:history.go(1);"><img src="<{$res}>/images/nav_forward.gif" align="absMiddle" border="0">前进</a>
+                          <a href="<{$app}>/login/logout" target=_top><img src="<{$res}>/images/nav_changePassword.gif" align="absMiddle" border="0">重新登录</a>
+                          <a href="<{$app}>/user/mod_pass" target="mainFrame"><img src="<{$res}>/images/nav_resetPassword.gif" align="absMiddle" border="0">修改密码</a>
+                          <a href="#" target=mainFrame><img src="<{$res}>/images/nav_help.gif" align="absMiddle" border="0">帮助</a>
+                          <img src="<{$res}>/images/menu_seprator.gif" align="absMiddle" />
+                          <span id="clock"></span>
+                      </span>
+                  </td>
+              </tr>
+          </table>
+      </div>
+</div>
+<script src="<{$res}>/js/Clock.js" type="text/javascript"></script>
+<script>
+var clock = new Clock();
+clock.display(document.getElementById('clock'));
+</script>
+</body>
+</html>

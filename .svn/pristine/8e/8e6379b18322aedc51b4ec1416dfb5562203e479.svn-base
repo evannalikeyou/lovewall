@@ -1,0 +1,33 @@
+<?php
+	class MyCenter {
+		function index(){
+			if(empty($_SESSION['home_login']) || $_SESSION['home_login']!=1){
+					$this->error('请先登录！');
+			}
+
+			$this->assign('title','个人中心----'.TITLE);
+			$this->assign('script','myCenter');
+			$this->display();
+		}	
+
+		function myExpression() {
+			$art = D("Article");
+			$page = new Pager($art->total(),22);
+			
+			$expression = $art->where(array("uid"=>$_SESSION["user_info"]["id"]))
+								->order("ptime desc")
+								->limit($page->limit)
+								->select();
+			$this->assign("expression",$expression);
+			$this->assign("fpage",$page->fpage(4,5,6));
+			$this->assign('title','个人中心----'.TITLE);
+			$this->assign('script','myCenter');
+			$this->display("index");
+		}
+		
+		function myWish() {
+			
+		}
+		
+		
+	}

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--引入css和js的公共文件-->
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+    <!--[if IE 8]><body class="ie"><![endif]-->
+    <!--[if IE 7]><body class="ie"><![endif]-->
+    <div id="shadow_all"></div>
+    <!--引入注册的公共文件-->
+    <{include file="public/register.inc.html"}>
+	<!--引入登录的公共文件-->
+	<{include file="public/login.inc.html"}>
+	<!--引入导航栏-->
+	<{include file="public/header.html"}>
+	
+    <div id="small_window">
+        <a id="cancle3" class="cancleAll"></a>
+        <form action = "<{$url}>/saylove" method = "post">
+            <textarea id="iwish_text" name="text"></textarea>
+            <p id="checkin">
+                <input type="checkbox" name="check" id="check" value = "niming">
+                <a id="checkimg"></a>匿名
+                <span id="wordsize">( 0/140 )</span>
+            </p>
+            <p id="mail">Ta的邮箱（选填）</p><input type="text" name="mailbox">
+            <span>（我们会为你发送一封邮件给Ta）</span>
+			<input id="window_button" value="提交" type="submit" name = "submit"/>
+        </form>
+    </div>
+
+    <!--内容背景-->
+    <div id="top_background">
+        <img id="top_sky" src="<{$res}>/images/blue sky.png">
+        <img id="left_balloon"src="<{$res}>/images/left_balloon.png" alt="love">
+        <img id="right_balloon" src="<{$res}>/images/right_balloon.png" alt="love">
+        <div class="clear"></div>
+        <div id="love_expression">
+        <a id="small_show">我要表白</a>
+        <a href="<{$app}>/myCenter/index" id="my_expression">我的表白</a>
+        </div>
+        <div id="two_demensional_code">
+        <img id="code_img" src="<{$res}>/images/2 demensional code.png" alt="扫一扫">“发送‘表白 ’ 到微信，随时随地表白爱”
+        </div>
+        <div class="clear"></div>
+        <img id="top" src="<{$res}>/images/top.png">
+    </div>
+    <!--内容背景结束-->
+    <!--瀑布流开始-->
+    <div class="wrapper" id="wrapper">
+    <{section loop = $data name = "ls"}>
+        <div class="content">
+            <div class="info"><{$data[ls].name}><span><{$data[ls].today_time}></span></div>
+            <div class="text">
+               <{$data[ls].content}>
+            </div>
+            <div class="source">
+            <{if $data[ls].post_type == 0}>
+            <span><img src="<{$res}>/images/weixin.png" alt="from wechat"> 通过微信投稿</span>
+            <{else}>
+            <span><img src="<{$res}>/images/website.png" alt="from website"> 通过网站投稿</span>
+            <{/if}>
+            <a href="<{$url}>/support/id/<{$data[ls].id}>"><img src="<{$res}>/images/heart.png" alt="点赞"> <{$data[ls].support_num}></a>
+            </div>
+        </div>
+	<{/section}>
+                <span><{$fpage}></span><!--每页20个-->
+    </div>
+    <!--瀑布流结束-->
+    <script type="text/javascript" src="<{$res}>/js/<{$script}>.js"></script>
+    <script type="text/javascript" src="<{$res}>/js/common.js"></script>
+    </body>
+    </html>

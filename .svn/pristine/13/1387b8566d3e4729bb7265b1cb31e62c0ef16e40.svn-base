@@ -1,0 +1,102 @@
+<?php
+
+	class UserModel extends Dpdo {
+		/*
+		得到用户名
+		@param1 int 用户的id号
+		*/
+		public function user_name($uid){
+			$user_name=$this->field('username')->find($uid);
+			return $user_name['username'];
+		}
+		
+		/*
+			得到用户表白贴数量
+			@param1 int 用户的id号
+			@return int		
+		*/
+		public function art_num($uid){
+			return D('Article')->where(array('uid'=>$uid))->total();
+		}
+		
+		/*
+			得到用户的头像
+			@param1 int 用户id
+			@return string 头像名称
+		*/
+		public function user_face($uid){
+			$face=$this->field('face_path')->where(array('id'=>$uid))->find();
+			return $face['face_path'];
+		}
+		
+		/*
+			得到用户的等级
+			@param1 int 用户id
+			@return string 用户的等级
+		*/
+		public function uid_get_level($uid){
+			$userinfo=$this->field('level')->where(array('id'=>$uid))->find();
+			//如果是管理员,就直接返回管理员,如果是版主,就直接返回版主,如果是普通用户,则根据积分到等级表进行查询
+			if($userinfo['level']==0){
+				return '普通用户';
+			}elseif($userinfo['level']==1){
+				return '管理员';
+			}elseif($userinfo['level']==2){
+				return '网站站长';
+			}
+		}
+		
+		/*
+			附加上性别
+		*/
+		public function get_gender($arr){
+			foreach($arr as &$v){
+				if($v['gender']==2){
+					$v['gender_t']='女';	
+				}elseif($v['gender']==1){
+					$v['gender_t']='男';	
+					}else{
+						$v['gender_t']='不明';	
+						}
+				
+			}
+			return $arr;
+		}
+		
+		/*
+			附加上身份
+		*/
+		public function get_level($arr){
+			foreach($arr as &$v){
+				if($v['level']==2){
+					$v['level_t']='站长';	
+				}elseif($v['level']==1){
+					$v['level_t']='管理员';	
+					}else{
+						$v['level_t']='普通用户';	
+						}
+				
+			}
+			return $arr;
+		}
+		
+		/*
+			处理ip后附加上
+		*/
+		public function detail_ip($arr){
+			foreach($arr as &$v){
+				$v['detail_ip']=long2ip($v['last_ip']);
+			}
+			return $arr;
+		}
+		
+				/*
+			处理ip后附加上
+		*/
+		public function uid_get_user_info($uid){
+			$info=$this->where(array('id'=>$uid))->find();
+			return $info;
+		}
+		
+	
+	}

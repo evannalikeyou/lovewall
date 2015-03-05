@@ -1,0 +1,8 @@
+<?php
+	class LovewallAction extends Common {
+		function index(){
+			$this->assign('title','表白墙----'.TITLE);
+			$this->assign('script','lovewall');
+			$this->display();
+		}		
+	}

@@ -1,0 +1,15 @@
+<?php /* Smarty version 2.6.18, created on 2013-08-29 10:12:58
+         compiled from public/login.inc.html */ ?>
+    <div id="login">
+        <a id="cancle2" class="cancleAll"></a>
+        <form action="<?php echo $this->_tpl_vars['app']; ?>
+/login/login" method="post">
+            <p>账 号</p>
+            <input type="text" name="username" id="username"/>
+            <a href="#">注册</a>
+            <p>密 码</p>
+            <input type="password" name="password" id="password"/>
+            <a href="#">忘记密码？</a>
+            <button type="submit" name="sure">登 陆</button>
+        </form>
+	</div>

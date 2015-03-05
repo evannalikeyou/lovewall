@@ -1,0 +1,59 @@
+<?php
+	class Article {
+		/**
+		 * 根据用户的id得到article表中的content，用于许愿树
+		 * @param int $uid 用户的id
+		 * @return 二维数组  文章内容
+		 */
+		function getContent() {
+			$content = $this->where(array("type"=>1))
+							->select();
+			return $content;
+		}
+		/**
+		 * 许愿树页面里的点瓶子查看内容
+		 * @return array 返回要取的数据
+		 */
+		function look() {
+			$user = D("user");
+// 			$art = D("article");
+			$content = $this->getContent();
+			foreach ($content as $value) {
+				$userInfor = $user->userInfor($value["uid"]);
+				if ($value["user_type"] == 1) {
+					$name = $userInfor["username"];
+				}else {
+					$name = "匿名用户";
+				}
+				$arr[] = array("email"=>$userInfor["email"],
+						"username"=>$name,
+						"content"=>$value["content"]
+				);
+			}
+			return $arr;
+		}
+		/**
+		 * 许愿树页面的我要许愿功能
+		 */
+		function inserter() {
+ 			if(isset($_POST["submit"])){
+
+				$_POST["content"] = $_POST["text"];
+				$_POST["type"] = 1;
+				$_POST["uid"] = $_SESSION["user_info"]["id"];
+				if ($_POST["check"] == 0) {
+					$_POST["user_type"] = 0;
+				}else {
+					$_POST["user_type"] = 1;
+				}
+// 				p($_POST);
+				if ($this->insert()) {
+					$this->success("发表成功",2,"mycenter/index");
+				}else {
+					$this->error("发表失败",3,"index");
+				}
+			} 
+		}
+		
+		
+	}

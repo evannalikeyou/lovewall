@@ -1,0 +1,33 @@
+*{
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(../images/bg.gif) repeat-x;
+	}
+#menuTree a{
+	color:#566984;
+	text-decoration:none;
+	}
+#menuTree{
+	padding:10px;
+	height:100%;
+	background:#FFF;
+	}
+table tr td.td1{
+	font-size:18px;
+	background:url(../images/bg_left_tc.gif) repeat-x; 
+	color:#FFF;
+	}
+table tr td.td2{
+	background:url(../images/bg_left_ls.gif);
+	}
+table tr td.td3{
+	background-image:url(../images/bg_left_rs.gif);
+	}
+table tr td.td4{
+	background-image:url(../images/bg_left_bc.gif);
+	}
+	
+

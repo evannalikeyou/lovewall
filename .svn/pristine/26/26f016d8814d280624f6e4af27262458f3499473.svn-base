@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--引入css和js的公共文件-->
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+	<!--[if IE 8]><body class="ie"><![endif]-->
+    <!--[if IE 7]><body class="ie"><![endif]-->
+	<!-- start of the header -->
+    <div id="shadow_all"></div>
+	<!--引入注册的公共文件-->
+    <{include file="public/register.inc.html"}>
+	<!--引入登录的公共文件-->
+	<{include file="public/login.inc.html"}>
+	<!--引入导航栏-->
+	<{include file="public/header.html"}>
+    
+    <div id="main">
+        <div id="tree">
+            <a href="<{$app}>/tree/index" id="tree1"></a>
+            <a href="<{$app}>/tree/index" id="tree2"></a>
+            <a href="<{$app}>/tree/index" id="leaves">
+                <span id="leaves1" class="all"></span>
+                <span id="leaves2" class="all"></span>
+            </a>
+        </div>
+        <div id="flower">
+            <a href="<{$app}>/originality/index" id="flower1"></a>
+            <a href="<{$app}>/originality/index" id="flower2"></a>
+            <a href="<{$app}>/originality/index" id="flower3"></a>
+            <a href="<{$app}>/originality/index" id="flower4"></a>
+            <a href="<{$app}>/originality/index" id="flower5"></a>
+        </div>
+        <div id="boy">
+            <div id="heartAll">
+                <a href="<{$app}>/lovewall/index" id="heart1"></a>
+                <a href="<{$app}>/lovewall/index" id="heart2"></a>
+                <a href="<{$app}>/lovewall/index" id="heart3"></a>
+            </div>
+        </div>
+    </div>
+ <!--引入底部版本信息和js文件的公共文件-->
+<{include file="public/footer.inc.html"}>   
+</body>
+</html>

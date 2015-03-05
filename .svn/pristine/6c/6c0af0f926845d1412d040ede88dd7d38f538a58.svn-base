@@ -1,0 +1,99 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="<{$res}>/css/main.css">
+</head>
+<body>
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" height="99%">
+    	<tr class="tr1">
+        	<td class="td1"><img src="<{$res}>/images/main_hl.gif" /></td>
+            <td>
+            	<span class="sp1"><img src="<{$res}>/images/main_hl2.gif" /></span>
+                <span class="sp2"><{$title}></span>
+                <span class="sp3"><img src="<{$res}>/images/main_hr.gif" /></span>
+            </td>
+            <td><span class="sp4"></span></td>
+        </tr>
+    	<tr>
+			<td class="td2"></td>
+			<td class="td_content_show" valign="top" align="middle">
+				<div id="add_user">
+                	<h2>编辑用户</h2>
+                    <form method="post" action="<{$url}>/update">
+                 	<table border="1">
+                    <tbody>
+                      <tr>
+                        <td>用户名：</td>
+                        <td style="text-align:left; text-indent:10px;">
+                        	<{$user_info.username}>
+                        	<input type="hidden" name="id" value="<{$user_info.id}>" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>邮箱：</td>
+                        <td style="text-align:left; text-indent:10px;"><{$user_info.email}></td>
+                      </tr>
+                      <tr>
+                        <td>性别：</td>
+                        <td>
+                        	<select name="gender">
+                            <{if $user_info.gender==0}>
+                        		<option value="0" selected>不明</option>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                            <{elseif $user_info.gender==1}>
+                            	<option value="0">不明</option>
+                                <option value="1" selected>男</option>
+                                <option value="2">女</option>
+                            <{elseif $user_info.gender==2}>
+                            	<option value="0">不明</option>
+                                <option value="1">男</option>
+                                <option value="2" selected>女</option>
+                            <{/if}>
+                            </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>身份：</td>
+                        <td>
+                        	<select name="level">
+                        	<{if $smarty.session.user_info.level==2}>	
+                                <{if $user_info.level==0}>
+                                    <option value="0" selected>普通管理员</option>
+                                    <option value="1">管理员</option>
+                                    <option value="2">站长</option>
+                                <{elseif $user_info.level==1}>
+                                    <option value="0">普通用户</option>
+                                    <option value="1" selected>管理员</option>
+                                    <option value="2">站长</option>
+                                <{elseif $user_info.level==2}>
+                                    <option value="0">普通用户</option>
+                                    <option value="1">管理员</option>
+                                    <option value="2" selected>站长</option>
+                                <{/if}>
+                            <{else}>
+                            	<option value="0">普通用户</option>
+                            <{/if}>
+                            </select>
+                        </td>
+                      </tr>
+                      </tbody>
+                      <tfoot>
+                      	<tr>
+                        	<td colspan="2"><input type="submit" name="sub" class="button" value="提交" /><input style="margin-left:10px;width:60px; height:20px;" type="reset" value="重置" /></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                    </form>
+                </div>
+			</td>
+			<td class="td3"></td>
+        </tr>
+		<tr class="tr2">
+			<td class="td4"></td>
+			<td class="td5"></td>
+			<td class="td6"></td>
+		</tr>
+    </table>
+</body>
+</html>

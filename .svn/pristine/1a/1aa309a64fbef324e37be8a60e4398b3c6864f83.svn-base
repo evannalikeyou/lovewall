@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--引入css和js的公共文件-->
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+	<!--[if IE 8]><body class="ie"><![endif]-->
+    <!--[if IE 7]><body class="ie"><![endif]-->
+	<!-- start of the header -->
+
+    <div id="shadow_all"></div>
+	<!--引入注册的公共文件-->
+    <{include file="public/register.inc.html"}>
+	<!--引入登录的公共文件-->
+	<{include file="public/login.inc.html"}>
+	<!--引入导航栏-->
+	<{include file="public/header.html"}>
+    
+    <div id="small_window">
+        <a id="cancle4" class="cancleAll"></a>
+        <form id="window_content" action = "<{$url}>/inserter" method = "post">
+            <p>输入你想许的愿望<p>
+            <textarea id="iwish_text" name="text"></textarea>
+            <p id="checkin">
+                <input type="checkbox" name="check" value = "niming" id="check">
+                <a id="checkimg"></a>匿名
+                <span id="wordsize">( 0/140 )</span>
+            </p>
+            <div id="info">
+                <p>邮箱（选填）</p>
+                <input type="text" name="mailbox">
+                <p id="info_span"><span>*</span>每人每周限发1条</p>
+            </div>   
+            <input  type="submit" name="submit" value = "提交" id="window_botton">
+        </form>
+    </div>
+	<{section loop=$arr name="ls" max = 9}>
+    <div class="watch_wish">
+        <a class="cancle3" class="cancleAll"></a>
+        <div>
+        <h5>查看许愿瓶</h5>
+        <p class="text"><{$arr[ls].content}></p>
+        <p  class="user"><{$arr[ls].username}></p>
+        <p  class="information">邮箱：<{$arr[ls].email}></p>
+    </div>
+    </div>
+	<{/section}>
+
+    <div id="main">
+        <div id="tree">
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+            <div class="buttle"><a class="buttle_no"></a><a class="buttle_light"></a></div>
+        </div>
+        <div id="iwish">
+            <a id="iwish_a"></a>
+            <a id="iwish_al"></a>
+        </div>
+        <div id="mywish">
+            <a href="<{$app}>/myCenter/index" id="mywish1"></a>
+            <a href="<{$app}>/myCenter/index" id="mywish2"></a>
+        </div>
+    </div>
+ <!--引入底部版本信息和js文件的公共文件-->
+<{include file="public/footer.inc.html"}>  
+</body>
+</html>

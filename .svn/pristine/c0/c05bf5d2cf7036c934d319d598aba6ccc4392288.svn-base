@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<{include file="public/title.inc.html"}>
+</head>
+<body>
+    <div id="shadow_all"></div>
+    <{include file="public/header.html"}>
+<!--内容背景-->
+<div id="top_background">
+    <img id="top_sky" src="<{$res}>/images/blue sky.png">
+    <img id="left_balloon"src="<{$res}>/images/left_balloon.png" alt="love">
+    <img id="right_balloon" src="<{$res}>/images/right_balloon.png" alt="love">
+</div>
+<div id="wrapper">
+    <div id="left">
+        <div id="image"><img src="<{$res}>/images/piccc.png" alt="头像">用户名</div>
+            <a href="<{$url}>/myExpression">我的表白</a>
+            <a href="#">我的许愿</a>
+        <div><a href="<{$app}>/login/logout"><span>退出</span></a></div>
+    </div>
+    <div id="right">
+        <table id="info">
+            <tr>
+                <th>编号</th>
+                <th>状态</th>
+                <th>匿名</th>
+                <th>申请删除/修改</th>
+            </tr>
+            <{section loop = $expression name = "ls"}>
+            <tr>
+                <td>520<{$expression[ls].id}></td>
+                <{if $expression[ls].audit == 0}>
+                <td>正在审核</td>
+                <{elseif $expression[ls].audit == 1}>
+                <td>审核不通过</td>
+                <{else}>
+                <td>审核通过</td>
+                <{/if}>
+                <{if $expression[ls].user_type == 0}>
+                <td>YES</td>
+                <{else}>
+                <td>NO</td>
+                <{/if}>
+                <td><a href="#">删除</a>/<a class="change" onclick="changetext()" href="#">修改</a> </td>
+            </tr>
+			<{/section}>
+
+        </table>
+        <div id="naocan"><{$fpage}></div>
+    </div>
+</div>
+<!-- start of the footer -->
+    <div id="footer">
+        <p><a href="#">关于红岩网校</a> | <a href="#">开发团队</a> | <a href="#">指出错误</a> | <a href="#">管理入口</a></p>
+        <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+    </div>
+    <!-- end of the footer -->
+<script type="text/javascript" src="<{$res}>/js/<{$script}>.js"></script>
+<script type="text/javascript" src="<{$res}>/js/common.js"></script>
+</body>
+</html>

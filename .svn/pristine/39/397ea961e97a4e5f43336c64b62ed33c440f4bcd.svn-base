@@ -1,0 +1,11 @@
+<?php
+	class Mycenter {
+		function index(){
+			if(empty($_SESSION['home_login']) || $_SESSION['home_login']!=1){
+					$this->error('请先登录！');
+			}
+			$this->assign('title','个人中心----'.TITLE);
+			$this->assign('script','myCenter');
+			$this->display();
+		}		
+	}

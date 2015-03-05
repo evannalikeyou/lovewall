@@ -1,0 +1,117 @@
+#block{
+    left: 76px;
+    width: 95px;
+}
+#top_background{
+    position: fixed;
+    left: 50%;
+    margin-left:-563px;
+    width: 1126px;
+    height: 514px;
+}
+#top_sky{
+    position: absolute;
+    right: 150px;
+    display: block;
+}
+#left_balloon{
+    /*position: absolute;*/
+    float: left;
+    margin-top: 7px;
+}
+#right_balloon{
+    float: right;
+    margin-top: 7px;
+    margin-right: 90px;
+}
+#wrapper{
+    width: 1006px;
+    height: 710px;
+    position: relative;
+    top: 46px;
+    margin: 0 auto;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+    /*background: #f9f6f6;*/
+}
+#left{
+    width: 160px;
+    height: 710px;
+    border: 1px solid #b9b6b6;
+    margin-top: -1px;
+    float: left;
+    border-left: none;
+}
+#image{
+    width: 125px;
+    height: 145px;
+    margin: 17px auto;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+#image>img{
+    margin-bottom: 15px;
+    max-width: 125px;
+    max-height: 125px;
+   overflow: hidden;
+}
+#exist:hover{
+    background: #fff;
+}
+span{
+    margin: 10px auto;
+    font-size: 12px;
+    font-weight: bold;
+    color: #909192;
+    display: block;
+    width: 135px;
+    border-top: 1px solid #dad9d9;
+    padding-top: 9px;
+    text-align: center;
+}
+#left>a{
+    display: block;
+    height: 25px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #5193cc;
+    text-align: center;
+    padding-top: 7px;
+}
+#left>a:hover{
+    background: #c7e3eb;
+    font-weight: bold;
+}
+#right{
+    float: right;
+    width: 844px;
+    height: 705px;
+    padding-top: 5px;
+}
+table{
+    font-family: "Microsoft SongTi";
+    font-size: 14px;
+    border-collapse:collapse;
+    width: 817px;
+    margin: 0 auto;
+}
+table th,
+table td{
+    border: 1px solid #b9b6b6;
+    padding: 4px 7px 4px 7px;
+    width: 188px;
+}
+table th{
+    color: #2b2b2c;
+}
+table td,
+table td>a{
+    text-align: center;
+    color: #8c8d8d;
+}
+table td>a{
+    text-decoration: underline;
+}
+

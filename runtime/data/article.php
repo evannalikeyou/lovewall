@@ -1,0 +1,1 @@
+<?php {"pri":"id","0":"uid","1":"content","2":"ta_email","3":"support_num","4":"click_num","5":"audit","6":"user_type","7":"post_type","8":"ptime","9":"ip","10":"no_audit_id","11":"today_time","12":"cross_time","13":"type"}yes

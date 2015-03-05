@@ -1,0 +1,343 @@
+.ie #nav ul li a:hover{
+    background-color: rgb(255,207,211);
+    color: #fff;
+}
+#nav ul li a:hover{
+    *+background-color: rgb(255,207,211);
+    *+color: #fff;
+}
+#block{
+    left: 264px;
+    width: 116px;
+}
+#top_background{
+    position: fixed;
+    left: 50%;
+    margin-left:-563px;
+    width: 1126px;
+    height: 514px;
+}
+#top_sky{
+    position: absolute;
+    right: 150px;
+    display: block;
+}
+#left_balloon{
+    /*position: absolute;*/
+    float: left;
+    margin-top: 7px;
+}
+#right_balloon{
+    float: right;
+    margin-top: 7px;
+    margin-right: 90px;
+}
+.clear{
+    clear: both;
+}
+#two_demensional_code{
+    margin-top: -27px;
+    margin-right: 62px;
+    width: 90px;
+    height: 148px;
+    float: right;
+    font-family:"Microsoft SongTi" ;
+    font-size: 12px;
+    color: #e078a9;
+    line-height: 21px;
+}
+#love_expression{
+    width: 88px;
+    height: 82px;
+    float: left;
+    margin-left: 75px;
+}
+#love_expression a{
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+    display: block;
+    width: 88px;
+    height: 26px;
+}
+#love_expression a:first-child{
+    background: url("../images/express%20love.png") no-repeat;
+}
+#my_expression{
+    background: url("../images/my%20expressions.png") no-repeat;
+    margin-top: 18px;
+}
+#top{
+    float: right;
+    margin-top: 80px;
+    margin-right: 90px;
+    cursor: pointer;
+}
+#top:hover{
+    animation:myaction 1s infinite;
+    -webkit-animation: myaction 1s infinite;
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
+}
+@keyframes myaction{
+    from {margin-top: 80px;}
+    to {margin-top: 40px;}
+}
+@-webkit-keyframes  myaction{
+    from {margin-top: 80px;}
+    to {margin-top: 40px;}
+}
+.wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+}
+.content{
+    margin-top: 42px;
+    margin-bottom: 10px;
+    padding: 2px;
+    position: absolute;
+    width: 255px;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: "Microsoft SongTi";
+    font-size: 12.92px;
+    line-height: 23px;
+    transition:box-shadow 1s;
+    background: rgba(249,246,246,0.2);
+}
+.info{
+    padding: 2px 5px 5px 5px;
+    font-family: "Microsoft SongTi";
+    font-size: 12px;
+}
+.info img{
+    display: block;
+    width: 240px;
+    border: 2px solid #b6b6b6;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.video{
+    display: block;
+    width: 240px;
+    border: 2px solid #b6b6b6;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+/*shadow*/
+#small_window{
+    width: 463px;
+    height: 268px;
+    z-index: 998;
+    background: url(../images/originality_bg.png) no-repeat;
+    border-radius: 5px;
+    padding-top: 32px;
+    position: fixed;
+    left: 50%;
+    margin-left: -231.5px;
+    top: 30%;
+    display: none;
+    opacity: 0;
+}
+#small_window form{
+    width: 401px;
+    height: 227px;
+    margin: 0 auto;
+    text-align: left;
+}
+#small_window textarea{
+    width: 401px;
+    height: 112px;
+    margin-bottom: 8px;
+}
+#small_window input[type="text"]{
+    width: 235px;
+}
+#small_window input[name="mailbox"]{
+    margin-right: 20px;
+}
+#small_window form>span{
+    margin-left: 153px;
+    display: block;
+}
+#small_window span{
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #9fa2a4;
+}
+#mail{
+    margin-top: 5px;
+}
+#checkin{
+    position: relative;
+    width: 400px;
+}
+#check{
+    display: none;
+}
+#checkimg{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background: url(../images/check.png);
+}
+#ma{
+    margin-top: 16px;
+}
+#ma input[name="checkma"]{
+    width: 58px;
+    margin-right: 5px;
+}
+#ma img{
+    position: relative;
+    top: 5px;
+}
+#wordsize{
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+#window_button{
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+/*shadow*/
+
+#photobox{
+    width: 641px;
+    max-height: 635px;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 8px;
+    margin-left: -320.5px;
+    z-index: 997;
+    display: none;
+    opacity: 0;
+}
+/*big photos*/
+#photo{
+    float: left;
+}
+#photos{
+    display: inline-block;
+    width: 550px;
+    height: 452px;
+    float: left;
+    overflow: hidden;
+}
+.turnppt{
+    width: 44px;
+    height: 494px;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+}
+#turnleft{
+    background: url(../images/turnleft.png) no-repeat;
+}
+#turnright{
+    background: url(../images/turnright.png) no-repeat;
+}
+#placeholder{
+    width: 550px;
+    height: 452px;
+}
+/*big photos*/
+/*small photos*/
+#smallphotos{
+    width: 641px;
+    float: left;
+}
+#ppt{
+    width: 540px;
+    height: 105px;
+    padding: 2px;
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+}
+.smallppt{
+    width: 40px;
+    height: 105px;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+}
+#smallleft{
+    background: url(../images/smallturnleft.png);
+}
+#smallright{
+    background: url(../images/smallturnright.png);
+}
+#ppt_image{
+    display: inline-block;
+    overflow: hidden;
+    width: 540px;
+    height: 101px;
+}
+#image{
+    width: 660px;
+    float: left;
+    overflow: hidden;
+}
+#ppt_image ul{
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+#ppt_image ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+}
+.ppt_smallphotos{
+    width: 98px;
+    height: 98px;
+    float: left;
+    margin-right: 10px;
+	overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #cecfcf;
+}
+#photo_on{
+    border: 1px solid #afd8fe;
+    box-shadow: 0 0 2px 2px #afd8fe;
+}
+/*small photos*/
+#description{
+    padding: 0 50px;
+    display: inline-block;
+    text-align: left;
+    text-indent: 2em;
+    color: #535454;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+#wrapper>span{
+    display: block;
+    position: absolute;
+    bottom: -80px ;
+}
+#wrapper>span>a{
+    display: inline-block;
+    font-family:"Microsoft YaHei";
+    font-size: 1.1em;
+    color: #272727;
+    margin-left: 20px;
+}
+#naocan{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}

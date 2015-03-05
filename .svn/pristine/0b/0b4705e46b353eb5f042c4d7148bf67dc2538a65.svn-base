@@ -1,0 +1,76 @@
+﻿<html>
+<head>
+<title>无标题页</title>
+<link rel="stylesheet" type="text/css" href="<{$res}>/css/left.css" />
+</head>
+<body>
+<table height="99%" cellspacing="0" cellsadding="0" width="98%" border="0">
+	<tr>
+    	<td width="10" height="30"><img src="<{$res}>/images/bg_left_tl.gif"></td>
+      	<td class="td1">Main Menu</td>
+      	<td width="10"><img src="<{$res}>/images/bg_left_tr.gif"></td>
+    </tr>
+    <tr>
+      	<td class="td2"></td>
+      	<td id="menuTree" valign="top"></td>
+      	<td class="td3"></td>
+    </tr>
+    <tr>
+      	<td width="10"><img src="<{$res}>/images/bg_left_bl.gif"></td>
+      	<td class="td4"></td>
+      	<td width="10"><img src="<{$res}>/images/bg_left_br.gif"></td>
+    </tr>
+</table>
+
+<script src="<{$res}>/js/TreeNode.js" type="text/javascript"></script>
+<script src="<{$res}>/js/Tree.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var tree = null;
+	var tool = new TreeNode('网站管理系统');
+	
+	var root1 = new TreeNode('网站后台管理');
+	var fun1 = new TreeNode('后台信息', '../index/main', 'tree_node.gif', null, 'tree_node.gif', null);
+	root1.add(fun1);
+	var fun2 = new TreeNode('网站配置', '../set/index', 'tree_node.gif', null, 'tree_node.gif', null);
+	root1.add(fun2);
+	tool.add(root1);
+	
+	var root2 = new TreeNode('全体用户管理');
+	var fun3 = new TreeNode('用户管理', '../user/index', 'tree_node.gif', null, 'tree_node.gif', null);
+	root2.add(fun3);
+	var fun4 = new TreeNode('用户添加', '../user/add', 'tree_node.gif', null, 'tree_node.gif', null);
+	root2.add(fun4);
+	tool.add(root2);
+	
+	var root3 = new TreeNode('表白/许愿管理');
+	var fun5 = new TreeNode('表白管理', '../tg/index', 'tree_node.gif', null, 'tree_node.gif', null);
+	root3.add(fun5);
+	var fun6 = new TreeNode('许愿管理', '../tg/wishing', 'tree_node.gif', null, 'tree_node.gif', null);
+	root3.add(fun6);
+	tool.add(root3);
+	
+	var root4 = new TreeNode('后台人员管理');
+	var fun7 = new TreeNode('修改密码', '../user/mod_pass', 'tree_node.gif', null, 'tree_node.gif', null);
+	root4.add(fun7);
+	var fun8 = new TreeNode('添加管理员', '../user/add_admin', 'tree_node.gif', null, 'tree_node.gif', null);
+	root4.add(fun8);
+	tool.add(root4);
+	
+	var root5 = new TreeNode('创意表白管理');
+	var fun9 = new TreeNode('相册管理', '../album/index', 'tree_node.gif', null, 'tree_node.gif', null);
+	root5.add(fun9);
+	var fun10 = new TreeNode('视频管理', '../album/video', 'tree_node.gif', null, 'tree_node.gif', null);
+	root5.add(fun10);
+	var fun11 = new TreeNode('添加相册', '../album/add_album', 'tree_node.gif', null, 'tree_node.gif', null);
+	root5.add(fun11);
+	var fun12 = new TreeNode('添加图片', '../album/add_pic', 'tree_node.gif', null, 'tree_node.gif', null);
+	root5.add(fun12);
+	var fun13 = new TreeNode('添加视频', '../album/add_video', 'tree_node.gif', null, 'tree_node.gif', null);
+	root5.add(fun13);
+	tool.add(root5);
+	
+	tree = new Tree(tool);
+	tree.show('menuTree');
+</script>
+</body>
+</html>
